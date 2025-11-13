@@ -1,0 +1,18 @@
+{
+  "name": "m1-nextjs",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@solar-icons/react": "^1.0.1",
+    "next": "16.0.1",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "sass": "^1.93.3",
+    "swiper": "^12.0.3"
+  }
+}

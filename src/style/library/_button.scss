@@ -1,0 +1,41 @@
+@use "@/style/library/variable" as *;
+
+%btn {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  width: max-content;
+  border: 1px solid transparent;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.btn-pr {
+  @extend %btn;
+  background-color: $pr;
+  border-color: $pr;
+  color: white;
+  border-radius: 50px;
+}
+
+.btn-sc {
+  @extend %btn;
+  background-color: $neutral;
+  border-color: $neutral;
+  color: black;
+  border-radius: 50px;
+}
+
+.btn-br {
+  @extend %btn;
+  border-color: $pr;
+  border-radius: 50px;
+}
