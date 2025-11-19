@@ -1,6 +1,6 @@
-const Unsere = () => {
+const Vehicles = () => {
   return (
-    <section className="unsere flex-col wrapper">
+    <section className="vehicles flex-col wrapper">
       <h2>Unsere Fahrzeuge</h2>
 
       <img src="/img/Unsere Fahrzeuge.png" alt="" />
@@ -8,4 +8,4 @@ const Unsere = () => {
   );
 };
 
-export default Unsere;
+export default Vehicles;

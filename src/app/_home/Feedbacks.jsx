@@ -28,8 +28,8 @@ const Feedbacks = () => {
       <h2>Schritte zum Erhalt des Zertifikats</h2>
 
       <div className="list">
-        {data.map((item) => (
-          <div key={item.name} className="box flex-col">
+        {data.map((item, index) => (
+          <div key={index} className="box flex-col">
             <p className="review">{item.review}</p>
 
             <div className="footer flex-row">
@@ -42,7 +42,11 @@ const Feedbacks = () => {
               </div>
               <div className="rate">
                 {Array.from({ length: 5 }, (_, index) => (
-                  <Star weight={"Bold"} color={index < item.rate ? "#E7B65F" : "gray"} />
+                  <Star
+                    key={index}
+                    weight={"Bold"}
+                    color={index < item.rate ? "#E7B65F" : "gray"}
+                  />
                 ))}
               </div>
             </div>

@@ -1,0 +1,30 @@
+@use "@/style/library/variable" as *;
+
+#contact-page {
+  .contact-info {
+    width: 100%;
+    gap: 100px;
+
+    .info {
+      width: 50%;
+      gap: 20px;
+
+      small {
+        margin-bottom: -10px;
+      }
+
+      .socials {
+        gap: 5px;
+      }
+    }
+
+    .form {
+      gap: 20px;
+      width: 50%;
+      background-color: $neutral;
+      height: 100%;
+      padding: 50px;
+      border-radius: 32px;
+    }
+  }
+}

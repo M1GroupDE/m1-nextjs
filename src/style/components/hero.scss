@@ -1,0 +1,18 @@
+.hero {
+  .hero-image {
+    position: relative;
+    img {
+      width: 100%;
+      border-radius: 32px;
+    }
+    .content {
+      gap: 20px;
+      position: absolute;
+      bottom: 100px;
+      left: 70px;
+      color: white;
+      align-items: flex-start;
+      max-width: 400px;
+    }
+  }
+}

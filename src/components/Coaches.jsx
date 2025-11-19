@@ -7,18 +7,18 @@ import { Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 const data = [
-  { img: "/img/couch.png", title: "name and lastname 1", subtitle: "test subtilte" },
-  { img: "/img/couch.png", title: "name and lastname 2", subtitle: "test subtilte" },
-  { img: "/img/couch.png", title: "name and lastname 3", subtitle: "test subtilte" },
-  { img: "/img/couch.png", title: "name and lastname 4", subtitle: "test subtilte" },
-  { img: "/img/couch.png", title: "name and lastname 5", subtitle: "test subtilte" },
+  { img: "/img/couch.jpg", title: "name and lastname 1", subtitle: "test subtilte" },
+  { img: "/img/couch.jpg", title: "name and lastname 2", subtitle: "test subtilte" },
+  { img: "/img/couch.jpg", title: "name and lastname 3", subtitle: "test subtilte" },
+  { img: "/img/couch.jpg", title: "name and lastname 4", subtitle: "test subtilte" },
+  { img: "/img/couch.jpg", title: "name and lastname 5", subtitle: "test subtilte" },
 ];
-const Wegbegleiter = () => {
+const Coaches = () => {
   const prevRef = useRef(null);
   const nextRef = useRef(null);
 
   return (
-    <section className="wegbegleiter wrapper">
+    <section className="coaches wrapper">
       <div className="head flex-row">
         <h2>Deine Beifahrer und Wegbegleiter</h2>
         <div className="navigation flex-row">
@@ -61,4 +61,4 @@ const Wegbegleiter = () => {
   );
 };
 
-export default Wegbegleiter;
+export default Coaches;

@@ -7,12 +7,12 @@ const Footer = () => {
     <footer>
       <div className="content wrapper flex-col">
         <section className="f1 flex-row">
-          <div className="logo">
+          <Link href={"/"} className="logo">
             <img src="/img/logo.png" alt="" />
-          </div>
+          </Link>
           <div className="cta">
             <Link href={"#"} className="btn-pr">
-              JEZT ANMELDEN
+              JETZT ANMELDEN
             </Link>
           </div>
         </section>

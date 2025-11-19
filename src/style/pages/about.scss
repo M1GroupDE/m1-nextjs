@@ -1,0 +1,17 @@
+#about-page {
+  .intro {
+    gap: 20px;
+  }
+
+  .unternehmen {
+    gap: 50px;
+    .list {
+      gap: 20px;
+      width: 100%;
+
+      img {
+        max-width: 300px;
+      }
+    }
+  }
+}

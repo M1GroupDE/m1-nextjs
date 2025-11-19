@@ -27,8 +27,8 @@ const Zertifikats = () => {
     <section className="zertifikats flex-col wrapper">
       <h2>Schritte zum Erhalt des Zertifikats</h2>
       <div className="list">
-        {data.map((item) => (
-          <div className="box flex-col">
+        {data.map((item, index) => (
+          <div className="box flex-col" key={index}>
             <img src={item.icon} alt="" />
             {item.title}
           </div>

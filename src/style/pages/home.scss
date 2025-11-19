@@ -1,90 +1,34 @@
 @use "@/style/library/variable" as *;
 
 #home-page {
-  .hero {
-    .hero-image {
-      position: relative;
-      img {
-        width: 100%;
-      }
-      .content {
-        gap: 20px;
-        position: absolute;
-        bottom: 100px;
-        left: 70px;
-        color: white;
-        align-items: flex-start;
-      }
+  .sub-hero {
+    margin-top: -200px;
+    gap: 50px;
+    justify-content: space-between;
+    .text {
+      width: 40%;
+      max-width: 400px;
+      margin-top: 20px;
     }
 
-    .hero-description {
-      gap: 50px;
-      justify-content: space-between;
-      .text {
-        width: 40%;
-        max-width: 400px;
-        margin-top: 20px;
-      }
+    .cards {
+      margin-top: -90px;
+      width: 55%;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
 
-      .cards {
-        margin-top: -90px;
-        width: 55%;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 20px;
-
-        .card {
-          background-color: $neutral;
-          align-items: center;
-          justify-content: center;
-          padding: 50px 10px;
-          border-radius: 24px;
-          img {
-            max-width: 80px;
-          }
+      .card {
+        background-color: $neutral;
+        align-items: center;
+        justify-content: center;
+        padding: 50px 10px;
+        border-radius: 24px;
+        img {
+          max-width: 80px;
         }
-      }
-    }
-  }
-
-  .cta-box {
-    .content {
-      min-height: 190px;
-      background-color: $neutral;
-      border-radius: 24px;
-      justify-content: space-between;
-      padding: 0 50px;
-    }
-  }
-
-  .filialen {
-    .content {
-      justify-content: space-between;
-      gap: 50px;
-
-      .addresses {
-        gap: 30px;
-
-        .filters {
-          gap: 10px;
-        }
-
-        .list {
-          gap: 10px;
-
-          .address {
-            gap: 10px;
-            padding: 20px;
-            background-color: $neutral;
-            border-radius: 16px;
-            cursor: pointer;
-          }
-        }
-      }
-
-      .map {
-        iframe {
-          border-radius: 16px;
+        p {
+          font-weight: 600;
         }
       }
     }
@@ -175,73 +119,6 @@
     }
   }
 
-  .wegbegleiter {
-    .head {
-      justify-content: space-between;
-
-      .navigation {
-        gap: 10px;
-        .btn-pr {
-          padding: 5px;
-          border-radius: 50%;
-        }
-      }
-    }
-    .slider {
-      margin-top: 50px;
-
-      .box {
-        position: relative;
-
-        img {
-          z-index: 5;
-          border-radius: 8px;
-        }
-
-        .content {
-          color: white;
-          position: absolute;
-          bottom: 50px;
-          width: 100%;
-          text-align: center;
-          z-index: 1000;
-          align-items: center;
-          gap: 10px;
-
-          small {
-            color: $neutral;
-            font-weight: 100;
-          }
-        }
-      }
-    }
-  }
-
-  .schritte {
-    img {
-      margin-top: 50px;
-      width: 100%;
-    }
-  }
-
-  .topjob {
-    width: 100%;
-    gap: 100px;
-
-    img {
-      width: 40%;
-    }
-    .content {
-      width: 60%;
-      gap: 50px;
-
-      ul {
-        list-style: disc;
-        gap: 20px;
-      }
-    }
-  }
-
   .zertifikats {
     gap: 50px;
 
@@ -259,6 +136,13 @@
         padding: 40px 10px;
         align-items: center;
       }
+    }
+  }
+
+  .schritte {
+    img {
+      margin-top: 50px;
+      width: 100%;
     }
   }
 
@@ -293,15 +177,14 @@
               background-color: $neutral;
             }
           }
+
+          .rate {
+            background-color: $neutral;
+            padding: 5px 10px;
+            border-radius: 25px;
+          }
         }
       }
-    }
-  }
-
-  .unsere {
-    img {
-      margin-top: 50px;
-      width: 100%;
     }
   }
 

@@ -1,0 +1,46 @@
+@use "@/style/library/variable" as *;
+
+.coaches {
+  .head {
+    justify-content: space-between;
+
+    .navigation {
+      gap: 10px;
+      .btn-pr {
+        padding: 5px;
+        border-radius: 50%;
+      }
+    }
+  }
+  .slider {
+    margin-top: 50px;
+
+    .box {
+      position: relative;
+
+      img {
+        z-index: 5;
+        border-radius: 8px;
+      }
+
+      .content {
+        color: $pr;
+        position: absolute;
+        bottom: 50px;
+        width: 100%;
+        text-align: center;
+        z-index: 1000;
+        align-items: center;
+        gap: 10px;
+
+        small {
+          color: white;
+          background-color: $pr;
+          padding: 5px 10px;
+          border-radius: 8px;
+          font-weight: 100;
+        }
+      }
+    }
+  }
+}

@@ -30,7 +30,7 @@ const Vertrau = () => {
 
         <div className="cta flex-row">
           <Link href={"#"} className="btn-pr">
-            JEZT ANMELDEN
+            JETZT ANMELDEN
           </Link>
         </div>
       </div>

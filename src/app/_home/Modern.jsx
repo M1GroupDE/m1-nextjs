@@ -25,7 +25,7 @@ const Modern = () => {
 
         <div className="cta flex-row">
           <Link href={"#"} className="btn-pr">
-            JEZT ANMELDEN
+            JETZT ANMELDEN
           </Link>
           <Link href={"#"} className="btn-sc">
             ÜBER UNS

@@ -1,0 +1,17 @@
+.topjob {
+  width: 100%;
+  gap: 100px;
+
+  img {
+    width: 40%;
+  }
+  .content {
+    width: 60%;
+    gap: 50px;
+
+    ul {
+      list-style: disc;
+      gap: 20px;
+    }
+  }
+}

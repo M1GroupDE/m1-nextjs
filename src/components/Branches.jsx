@@ -34,7 +34,7 @@ const data = [
   },
 ];
 
-const Filialen = () => {
+const Branches = () => {
   const [type, setType] = useState("m1 plus");
   const [activeAddress, setActiveAddress] = useState(data[0]);
 
@@ -44,7 +44,7 @@ const Filialen = () => {
   );
 
   return (
-    <section className="filialen wrapper">
+    <section className="branches wrapper">
       <h2>Filialen</h2>
       <div className="content flex-row">
         <div className="addresses flex-col">
@@ -93,4 +93,4 @@ const Filialen = () => {
   );
 };
 
-export default Filialen;
+export default Branches;
