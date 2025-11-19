@@ -24,6 +24,7 @@ footer {
     .col-1 {
       justify-content: space-between;
       height: -webkit-fill-available;
+      max-width: 600px;
 
       .socials {
         gap: 10px;

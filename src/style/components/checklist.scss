@@ -1,0 +1,21 @@
+@use "@/style/library/variable" as *;
+
+.checklist {
+  background-color: $neutral;
+
+  .content {
+    gap: 50px;
+
+    .list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: start;
+      gap: 30px;
+      width: 100%;
+
+      .box {
+        gap: 10px;
+      }
+    }
+  }
+}
