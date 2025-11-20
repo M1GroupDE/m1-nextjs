@@ -9,11 +9,13 @@ const InfoCard = ({ title, data }) => {
           <div className="box flex-col" key={index}>
             <div className="content flex-col">
               <h3>{item.title}</h3>
-              <p>{item.description}</p>
+              {item.description && <p>{item.description}</p>}
             </div>
-            <Link className="btn-pr" href={item.link}>
-              {item.cta}
-            </Link>
+            {item.link && (
+              <Link className="btn-pr" href={item.link}>
+                {item.cta}
+              </Link>
+            )}
           </div>
         ))}
       </div>

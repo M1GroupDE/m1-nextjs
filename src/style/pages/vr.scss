@@ -1,0 +1,63 @@
+#vr {
+  .iconcard {
+    .list {
+      grid-template-columns: repeat(4, 1fr);
+      padding: 0;
+      .box {
+        h3 {
+          font-size: 1rem;
+        }
+        p {
+          color: #292f35;
+          font-weight: 300;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .Lerninhalte {
+    gap: 50px;
+
+    .list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 50px 100px;
+
+      justify-items: start;
+    }
+  }
+
+  .Warum {
+    gap: 50px;
+
+    img {
+      border-radius: 24px;
+    }
+
+    .content {
+      gap: 30px;
+
+      ul {
+        list-style: disc;
+        margin-left: 15px;
+        li {
+          padding: 10px;
+        }
+      }
+    }
+  }
+
+  .infocard {
+    .list {
+      grid-template-columns: repeat(4, 1fr);
+      .box {
+        align-items: center;
+        justify-content: center;
+        h3 {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
