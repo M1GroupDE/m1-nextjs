@@ -1,8 +1,8 @@
 import Coaches from "@/components/Coaches";
 import Hero from "@/components/Hero";
+import PageIntro from "@/components/PageIntro";
 import TopJob from "@/components/TopJob";
 import Vehicles from "@/components/Vehicles";
-import Link from "next/link";
 
 const page = () => {
   return (
@@ -15,21 +15,14 @@ const page = () => {
         }
       />
 
-      <section className="intro flex-col wrapper">
-        <h2>Das B steht für Freiheit</h2>
-        <p>
-          Bei M1 setzen wir auf Erfahrung, Fachkompetenz und einen eigenen Übungsplatz, um
-          optimale Bedingungen für eine konzentrierte und stressfreie Fahrausbildung zu
-          schaffen. Mit über 10.000 Quadratmetern Trainingsfläche ermöglichen wir
-          praktische Übungen ohne Ablenkung durch andere Verkehrsteilnehmer – ideal für
-          Motorrad- und Lkw-Ausbildungen sowie für den Einstieg ins Autofahren. Ergänzend
-          dazu kommt der Einsatz eines modernen 360°-Fahrsimulators.
-        </p>
-
-        <Link href={"/#"} className="btn-pr">
-          JETZT ANMELDEN
-        </Link>
-      </section>
+      <PageIntro
+        title={"Das B steht für Freiheit"}
+        description={
+          "Bei M1 setzen wir auf Erfahrung, Fachkompetenz und einen eigenen Übungsplatz, um optimale Bedingungen für eine konzentrierte und stressfreie Fahrausbildung zu schaffen. Mit über 10.000 Quadratmetern Trainingsfläche ermöglichen wir praktische Übungen ohne Ablenkung durch andere Verkehrsteilnehmer – ideal für Motorrad- und Lkw-Ausbildungen sowie für den Einstieg ins Autofahren. Ergänzend dazu kommt der Einsatz eines modernen 360°-Fahrsimulators."
+        }
+        cta={"JETZT ANMELDEN"}
+        link={"#"}
+      />
 
       <TopJob />
 

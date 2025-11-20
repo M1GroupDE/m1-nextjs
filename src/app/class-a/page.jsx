@@ -3,8 +3,8 @@ import Coaches from "@/components/Coaches";
 import Hero from "@/components/Hero";
 import IconCard from "@/components/IconCard";
 import InfoCard from "@/components/InfoCard";
+import PageIntro from "@/components/PageIntro";
 import QA from "@/components/QA";
-import Link from "next/link";
 
 const iconCardData = [
   { icon: "/img/ALTERSKLASSE.png", title: "ALTERSKLASSE: 17 JAHRE+" },
@@ -86,24 +86,14 @@ const page = () => {
         subtitle={"Du lebst nicht für den Beifahrersitz."}
       />
 
-      <section className="intro flex-col wrapper">
-        <h2>Unabhängigkeit kann Abhängig machen.</h2>
-        <p>
-          Hast du dich schon einmal gefragt, warum jedes Jahr im Frühling unzählige
-          Menschen mit fettem Grinsen ihren Helm aus dem Keller holen? Die Antwort liegt
-          auf der Straße – oder besser gesagt in der Kurve: Fahrtwind spüren, für einen
-          Moment eins mit der Straße werden, die Strecke mit dem ganzen Körper wahrnehmen
-          und obendrauf in jedem Tunnel der fette Sound deiner Maschine – so hast du
-          Freiheit noch nie erlebt, versprochen. Und damit das auch schon vor deiner
-          ersten Fahrstunde gilt, kümmern wir uns bei ACADEMY ums organisatorische
-          Drumherum. Also los, such dir eine Klasse aus – und wir starten gemeinsam ins
-          Abenteuer.  
-        </p>
-
-        <Link href={"/#"} className="btn-pr">
-          JETZT ANMELDEN
-        </Link>
-      </section>
+      <PageIntro
+        title={"Unabhängigkeit kann Abhängig machen."}
+        description={
+          "Hast du dich schon einmal gefragt, warum jedes Jahr im Frühling unzählige Menschen mit fettem Grinsen ihren Helm aus dem Keller holen? Die Antwort liegt auf der Straße – oder besser gesagt in der Kurve: Fahrtwind spüren, für einen Moment eins mit der Straße werden, die Strecke mit dem ganzen Körper wahrnehmen und obendrauf in jedem Tunnel der fette Sound deiner Maschine – so hast du Freiheit noch nie erlebt, versprochen. Und damit das auch schon vor deiner ersten Fahrstunde gilt, kümmern wir uns bei ACADEMY ums organisatorische Drumherum. Also los, such dir eine Klasse aus - und wir starten gemeinsam ins Abenteuer."
+        }
+        cta={"JETZT ANMELDEN"}
+        link={"#"}
+      />
 
       <IconCard title={"Schnelle Fakten zur Klasse B"} data={iconCardData} />
 

@@ -6,7 +6,8 @@ const IconCard = ({ title, data }) => {
         {data.map((item, index) => (
           <div className="box flex-col" key={index}>
             <img src={item.icon} alt={item.title} />
-            {item.title}
+            <h3>{item.title}</h3>
+            {item.description && <p>{item.description}</p>}
           </div>
         ))}
       </div>

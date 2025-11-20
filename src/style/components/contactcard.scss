@@ -1,0 +1,31 @@
+.contact-card {
+  gap: 50px;
+
+  .content {
+    gap: 50px;
+    justify-content: start;
+
+    img {
+      border-radius: 24px;
+      max-height: 270px;
+    }
+
+    .contact-details {
+      gap: 50px;
+      align-items: start;
+      height: -webkit-fill-available;
+
+      .header {
+        gap: 10px;
+      }
+
+      .footer {
+        gap: 10px;
+
+        .box {
+          gap: 5px;
+        }
+      }
+    }
+  }
+}

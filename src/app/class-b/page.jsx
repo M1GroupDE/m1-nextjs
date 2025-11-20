@@ -3,8 +3,8 @@ import Coaches from "@/components/Coaches";
 import Hero from "@/components/Hero";
 import IconCard from "@/components/IconCard";
 import InfoCard from "@/components/InfoCard";
+import PageIntro from "@/components/PageIntro";
 import QA from "@/components/QA";
-import Link from "next/link";
 
 const iconCardData = [
   { icon: "/img/ALTERSKLASSE.png", title: "ALTERSKLASSE: 17 JAHRE+" },
@@ -98,18 +98,14 @@ const page = () => {
         subtitle={"Du fährst nicht nur Motorrad. Du lebst es"}
       />
 
-      <section className="intro flex-col wrapper">
-        <h2>Das B steht für Freiheit</h2>
-        <p>
-          Der Motorradführerschein A erlaubt das Fahren aller Krafträder ohne
-          Leistungsbegrenzung – für echte Motorradliebhaber:innen, die maximale Freiheit
-          genießen wollen.
-        </p>
-
-        <Link href={"/#"} className="btn-pr">
-          JETZT ANMELDEN
-        </Link>
-      </section>
+      <PageIntro
+        title={"Das B steht für Freiheit"}
+        description={
+          "Der Motorradführerschein A erlaubt das Fahren aller Krafträder ohne Leistungsbegrenzung – für echte Motorradliebhaber:innen, die maximale Freiheit genießen wollen."
+        }
+        cta={"JETZT ANMELDEN"}
+        link={"#"}
+      />
 
       <IconCard title={"Schnelle Fakten zur Klasse B"} data={iconCardData} />
 
