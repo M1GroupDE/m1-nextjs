@@ -8,9 +8,9 @@
     "start": "next start"
   },
   "dependencies": {
-    "next": "16.0.1",
-    "react": "19.2.0",
-    "react-dom": "19.2.0",
+    "next": "^16.0.7",
+    "react": "^19.2.1",
+    "react-dom": "^19.2.1",
     "sass": "^1.93.3",
     "solar-icon-set": "^2.0.1",
     "swiper": "^12.0.3"
