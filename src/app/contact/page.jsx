@@ -1,13 +1,13 @@
 "use client";
 import Branches from "@/components/Branches";
 import Hero from "@/components/Hero";
-import { CameraSquare } from "@solar-icons/react";
 import Link from "next/link";
+import { CameraSquareLinear } from "solar-icon-set";
 
 const page = () => {
   return (
     <main id="contact-page">
-      <Hero img={"/img/contact-hero.png"} title={"Kontakt M1"} />
+      <Hero img={"/img/contact-hero.jpg"} title={"Kontakt M1"} />
 
       <div className="contact-info flex-row wrapper">
         <div className="info flex-col">
@@ -31,16 +31,16 @@ const page = () => {
 
           <div className="socials flex-row">
             <Link href={"#"}>
-              <CameraSquare size={16} />
+              <CameraSquareLinear size={16} />
             </Link>
             <Link href={"#"}>
-              <CameraSquare size={16} />
+              <CameraSquareLinear size={16} />
             </Link>
             <Link href={"#"}>
-              <CameraSquare size={16} />
+              <CameraSquareLinear size={16} />
             </Link>
             <Link href={"#"}>
-              <CameraSquare size={16} />
+              <CameraSquareLinear size={16} />
             </Link>
           </div>
         </div>

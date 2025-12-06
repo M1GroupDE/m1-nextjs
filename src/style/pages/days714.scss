@@ -1,7 +1,15 @@
+@use "@/style/library/breakpoint" as *;
+
 #days714 {
   .iconcard {
     .list {
       grid-template-columns: repeat(4, 1fr);
+      @include lg {
+        grid-template-columns: repeat(2, 1fr);
+        &:has(:last-child:nth-child(odd)) > :last-child {
+          grid-column: unset;
+        }
+      }
       padding: 0;
       .box {
         h3 {

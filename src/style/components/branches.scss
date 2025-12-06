@@ -1,12 +1,23 @@
 @use "@/style/library/variable" as *;
+@use "@/style/library/breakpoint" as *;
 
 .branches {
   .content {
     justify-content: space-between;
     gap: 50px;
+    width: 100%;
+    margin-top: 50px;
+
+    @include lg {
+      flex-direction: column-reverse;
+    }
 
     .addresses {
       gap: 30px;
+      width: 50%;
+      @include lg {
+        width: 100%;
+      }
 
       .filters {
         gap: 10px;
@@ -14,6 +25,7 @@
 
       .list {
         gap: 10px;
+        width: 100%;
 
         .address {
           gap: 10px;
@@ -21,13 +33,27 @@
           background-color: $neutral;
           border-radius: 16px;
           cursor: pointer;
+          width: 100%;
+          justify-content: start;
+          transition: all 0.3s;
+
+          &:hover {
+            background-color: $pr;
+            color: white;
+          }
         }
       }
     }
 
     .map {
+      width: 50%;
       iframe {
         border-radius: 16px;
+        width: 100%;
+      }
+
+      @include lg {
+        width: 100%;
       }
     }
   }

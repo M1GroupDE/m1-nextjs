@@ -1,6 +1,6 @@
 "use client";
-import { AltArrowLeft, AltArrowRight } from "@solar-icons/react";
 import { useRef } from "react";
+import { AltArrowLeftBold, AltArrowRightBold } from "solar-icon-set";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
@@ -23,10 +23,10 @@ const Coaches = () => {
         <h2>Deine Beifahrer und Wegbegleiter</h2>
         <div className="navigation flex-row">
           <button className="btn-pr" ref={prevRef} aria-label="Previous slide">
-            <AltArrowLeft size={24} />
+            <AltArrowLeftBold size={24} />
           </button>
           <button className="btn-pr" ref={nextRef} aria-label="Next slide">
-            <AltArrowRight size={24} />
+            <AltArrowRightBold size={24} />
           </button>
         </div>
       </div>
@@ -35,19 +35,31 @@ const Coaches = () => {
         <Swiper
           modules={[Navigation]}
           loop
-          spaceBetween={50}
+          spaceBetween={20}
           slidesPerView={4}
           onBeforeInit={(swiper) => {
-            // Link the external navigation buttons (refs) to swiper params
             swiper.params.navigation.prevEl = prevRef.current;
             swiper.params.navigation.nextEl = nextRef.current;
+          }}
+          breakpoints={{
+            0: {
+              slidesPerView: 1.7,
+            },
+            768: {
+              slidesPerView: 2.7,
+            },
+            1024: {
+              slidesPerView: 4,
+            },
           }}
           navigation={{ prevEl: prevRef.current, nextEl: nextRef.current }}
         >
           {data.map((item) => (
             <SwiperSlide key={item.title}>
               <div className="box">
-                <img src={item.img} alt={item.title} />
+                <div class="image-wrapper">
+                  <img src={item.img} alt={item.title} />
+                </div>
                 <div className="content flex-col">
                   <strong>{item.title}</strong>
                   <small>{item.subtitle}</small>

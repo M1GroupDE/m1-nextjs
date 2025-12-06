@@ -1,10 +1,14 @@
 @use "@/style/library/variable" as *;
+@use "@/style/library/breakpoint" as *;
 
 .coaches {
   .head {
     justify-content: space-between;
 
     .navigation {
+      @include lg {
+        display: none;
+      }
       gap: 10px;
       .btn-pr {
         padding: 5px;
@@ -14,13 +18,54 @@
   }
   .slider {
     margin-top: 50px;
+    position: relative;
+    @include lg {
+      &::after {
+        width: 100%;
+        height: 100%;
+        content: "";
+        position: absolute;
+        z-index: 1;
+        right: -20px;
+        top: 0;
+        background: linear-gradient(
+          90deg,
+          rgba(255, 255, 255, 0) 60%,
+          rgba(244, 244, 244, 1) 95%
+        );
+
+        pointer-events: none;
+      }
+    }
 
     .box {
       position: relative;
 
-      img {
-        z-index: 5;
-        border-radius: 8px;
+      .image-wrapper {
+        position: relative;
+        display: inline-block;
+
+        img {
+          display: block;
+          width: 100%;
+          border-radius: 8px;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          top: 0;
+          border-radius: 8px;
+          background: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.8) 0%,
+            rgba(0, 0, 0, 0) 60%
+          );
+          z-index: 2;
+        }
       }
 
       .content {
@@ -32,13 +77,10 @@
         z-index: 1000;
         align-items: center;
         gap: 10px;
+        color: white;
 
-        small {
-          color: white;
-          background-color: $pr;
-          padding: 5px 10px;
-          border-radius: 8px;
-          font-weight: 100;
+        @include lg {
+          bottom: 20px;
         }
       }
     }

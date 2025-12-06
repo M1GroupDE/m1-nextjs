@@ -1,18 +1,28 @@
+@use "@/style/library/breakpoint" as *;
+
 .contact-card {
   gap: 50px;
 
   .content {
     gap: 50px;
     justify-content: start;
+    @include lg {
+      gap: 20px;
+    }
 
     img {
       border-radius: 24px;
       max-height: 270px;
+      @include lg {
+        max-height: 200px;
+      }
     }
 
     .contact-details {
       gap: 50px;
       align-items: start;
+      justify-content: start;
+
       height: -webkit-fill-available;
 
       .header {

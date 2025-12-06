@@ -1,7 +1,7 @@
 "use client";
 
-import { MapPoint } from "@solar-icons/react";
 import { useEffect, useState } from "react";
+import { MapPointBold, MapPointLinear } from "solar-icon-set";
 
 const data = [
   {
@@ -72,10 +72,11 @@ const Branches = () => {
                   className="address flex-row"
                   onClick={() => setActiveAddress(item)}
                 >
-                  <MapPoint
-                    size={30}
-                    weight={activeAddress === item ? "Bold" : "Linear"}
-                  />
+                  {activeAddress === item ? (
+                    <MapPointBold size={30} />
+                  ) : (
+                    <MapPointLinear size={30} />
+                  )}
                   <p>
                     <strong>{item.address}</strong>
                   </p>

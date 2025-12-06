@@ -28,7 +28,7 @@ const iconCardData = [
 const page = () => {
   return (
     <main id="class-page" className="theory-test">
-      <Hero img={"/img/theory-test-hero.png"} />
+      <Hero img={"/img/theory-test-hero.jpg"} />
 
       <PageIntro
         title={"Alle Fragen für die Theorieprüfung – schnell, aktuell und prüfungsnah."}

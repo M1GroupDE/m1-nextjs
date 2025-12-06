@@ -1,9 +1,8 @@
-"use client";
 import Hero from "@/components/Hero";
 import IconCard from "@/components/IconCard";
 import InfoCard from "@/components/InfoCard";
 import PageIntro from "@/components/PageIntro";
-import { Calendar } from "@solar-icons/react";
+import { CalendarLinear } from "solar-icon-set";
 
 const iconCardData = [
   {
@@ -58,38 +57,38 @@ const page = () => {
 
         <div className="list">
           <div className="box flex-row">
-            <Calendar size={32} />
+            <CalendarLinear size={32} />
             <p>
               <strong>Grundlagen: Anfahren, Schalten, Anhalten</strong>
             </p>
           </div>
           <div className="box flex-row">
-            <Calendar size={32} />
+            <CalendarLinear size={32} />
             <p>
               <strong>Parken & Rangieren</strong>
             </p>
           </div>
 
           <div className="box flex-row">
-            <Calendar size={32} />
+            <CalendarLinear size={32} />
             <p>
               <strong>Verkehrsbeobachtung & Spiegelarbeit</strong>
             </p>
           </div>
           <div className="box flex-row">
-            <Calendar size={32} />
+            <CalendarLinear size={32} />
             <p>
               <strong>Nacht- und Schlechtwetterfahrten</strong>
             </p>
           </div>
           <div className="box flex-row">
-            <Calendar size={32} />
+            <CalendarLinear size={32} />
             <p>
               <strong>Stadt-, Land- und Autobahntraining</strong>
             </p>
           </div>
           <div className="box flex-row">
-            <Calendar size={32} />
+            <CalendarLinear size={32} />
             <p>
               <strong>Gefahrbremsung & Ausweichmanöver</strong>
             </p>

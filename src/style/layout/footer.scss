@@ -1,3 +1,5 @@
+@use "@/style/library/breakpoint" as *;
+
 footer {
   background-color: white;
 
@@ -9,6 +11,9 @@ footer {
   .f1 {
     width: 100%;
     justify-content: space-between;
+    @include lg {
+      padding-top: 40px;
+    }
 
     .logo {
       width: 100px;
@@ -28,6 +33,13 @@ footer {
 
       .socials {
         gap: 10px;
+      }
+    }
+
+    @include lg {
+      flex-direction: column;
+      .socials {
+        margin-top: 20px;
       }
     }
 

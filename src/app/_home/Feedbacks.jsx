@@ -1,5 +1,4 @@
-"use client";
-import { Star } from "@solar-icons/react";
+import { StarBold } from "solar-icon-set";
 
 const data = [
   {
@@ -42,7 +41,7 @@ const Feedbacks = () => {
               </div>
               <div className="rate">
                 {Array.from({ length: 5 }, (_, index) => (
-                  <Star
+                  <StarBold
                     key={index}
                     weight={"Bold"}
                     color={index < item.rate ? "#E7B65F" : "gray"}

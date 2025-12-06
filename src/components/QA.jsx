@@ -1,6 +1,7 @@
 "use client";
-import { AltArrowDown } from "@solar-icons/react";
+
 import { useEffect, useRef, useState } from "react";
+import { AltArrowDownLinear } from "solar-icon-set";
 
 const QA = ({ data, title }) => {
   const [open, setOpen] = useState(null);
@@ -29,7 +30,7 @@ const QA = ({ data, title }) => {
               onClick={() => setOpen(open === index ? null : index)}
             >
               <h3>{item.q}</h3>
-              <AltArrowDown
+              <AltArrowDownLinear
                 size={24}
                 className={`arrow ${open === index ? "active" : ""}`}
               />

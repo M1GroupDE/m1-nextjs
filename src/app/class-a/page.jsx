@@ -81,7 +81,7 @@ const page = () => {
   return (
     <main id="class-page">
       <Hero
-        img={"/img/classa-hero.png"}
+        img={"/img/classa-hero.jpg"}
         title={"Klasse A - Alle Motorräder"}
         subtitle={"Du lebst nicht für den Beifahrersitz."}
       />

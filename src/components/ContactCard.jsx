@@ -1,5 +1,4 @@
-"use client";
-import { Mailbox, PhoneCalling } from "@solar-icons/react";
+import { MailboxLinear, PhoneCallingLinear } from "solar-icon-set";
 
 const ContactCard = () => {
   return (
@@ -20,12 +19,12 @@ const ContactCard = () => {
 
           <div className="footer flex-col">
             <div className="box flex-row">
-              <PhoneCalling size={24} />
+              <PhoneCallingLinear size={24} />
               <p>089 / 70 99 77 98</p>
             </div>
 
             <div className="box flex-row">
-              <Mailbox size={24} />
+              <MailboxLinear size={24} />
               <p>s.dener@groupm1.de</p>
             </div>
           </div>

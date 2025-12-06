@@ -1,4 +1,5 @@
 @use "@/style/library/variable" as *;
+@use "@/style/library/breakpoint" as *;
 
 .courses {
   gap: 50px;
@@ -7,6 +8,11 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 50px;
+    width: 100%;
+    @include lg {
+      gap: 20px;
+      grid-template-columns: repeat(1, 1fr);
+    }
 
     .box {
       background-color: white;

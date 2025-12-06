@@ -93,7 +93,7 @@ const page = () => {
   return (
     <main id="class-page">
       <Hero
-        img={"/img/classb-hero.png"}
+        img={"/img/classb-hero.jpg"}
         title={"Führerschein Klasse B"}
         subtitle={"Du fährst nicht nur Motorrad. Du lebst es"}
       />

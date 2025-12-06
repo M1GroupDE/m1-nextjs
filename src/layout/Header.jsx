@@ -1,18 +1,47 @@
+"use client";
 import Link from "next/link";
+import { useState } from "react";
+import { AltArrowDownBold, HamburgerMenuLinear } from "solar-icon-set";
 
 const Header = () => {
+  const [mobileOpen, setMobileOpen] = useState(false);
+
   return (
-    <header id="header" className="wrapper flex-row">
+    <header id="header" className={`wrapper flex-row ${mobileOpen ? "mobile-open" : ""}`}>
       <Link href="/" className="logo">
         <img src="img/logo.png" alt="" />
       </Link>
 
       <nav className="nav flex-row">
         <div className="site-nav flex-row">
-          <Link href={"#"}>Führerschein machen</Link>
-          <Link href={"#"}>Unsere Dienstleistungen</Link>
+          <Link href={"/contact"}>Dein Kontakt zu uns</Link>
+          <Link href={"#"}>get a driver's license</Link>
+
+          <div className="dropdown">
+            <div className="dropdown-toggle flex-row">
+              <strong>further offer</strong>
+              <AltArrowDownBold />
+            </div>
+            <ul className="dropdown-menu">
+              <li>
+                <Link href="7-14-days">Dein Führerschein in nur 7–14 Tagen</Link>
+              </li>
+              <li>
+                <Link href="/vr">DEGENER 360°-Fahrsimulator</Link>
+              </li>
+              <li>
+                <Link href="/financing">Führerschein finanzieren</Link>
+              </li>
+              <li>
+                <Link href="/digital-services">Digitale Services</Link>
+              </li>
+              <li>
+                <Link href="/theory-test">Fragen für die Theorieprüfung</Link>
+              </li>
+            </ul>
+          </div>
+
           <Link href={"/about"}>Über uns</Link>
-          <Link href={"/contact"}>Kontaktieren Sie uns</Link>
         </div>
 
         <div className="cta">
@@ -21,6 +50,73 @@ const Header = () => {
           </Link>
         </div>
       </nav>
+
+      <button
+        className={`burger ${mobileOpen ? "open" : ""}`}
+        aria-expanded={mobileOpen}
+        aria-controls="mobile-menu"
+        onClick={() => setMobileOpen((s) => !s)}
+        aria-label={mobileOpen ? "Close menu" : "Open menu"}
+      >
+        <HamburgerMenuLinear size={32} />
+      </button>
+
+      <div id="mobile-menu" className={`mobile-menu ${mobileOpen ? "open" : ""}`}>
+        <ul>
+          <li>
+            <Link href="/contact" onClick={() => setMobileOpen(false)}>
+              Dein Kontakt zu uns
+            </Link>
+          </li>
+          <li>
+            <Link href="#" onClick={() => setMobileOpen(false)}>
+              get a driver's license
+            </Link>
+          </li>
+          <li className="mobile-sub">
+            <details>
+              <summary>further offer</summary>
+              <ul>
+                <li>
+                  <Link href="/7-14-days" onClick={() => setMobileOpen(false)}>
+                    Dein Führerschein in nur 7–14 Tagen
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/vr" onClick={() => setMobileOpen(false)}>
+                    DEGENER 360°-Fahrsimulator
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/financing" onClick={() => setMobileOpen(false)}>
+                    Führerschein finanzieren
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/digital-services" onClick={() => setMobileOpen(false)}>
+                    Digitale Services
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/theory-test" onClick={() => setMobileOpen(false)}>
+                    Fragen für die Theorieprüfung
+                  </Link>
+                </li>
+              </ul>
+            </details>
+          </li>
+          <li>
+            <Link href="/about" onClick={() => setMobileOpen(false)}>
+              Über uns
+            </Link>
+          </li>
+          <li className="mobile-cta">
+            <Link href="#" className="btn-pr" onClick={() => setMobileOpen(false)}>
+              JETZT ANMELDEN
+            </Link>
+          </li>
+        </ul>
+      </div>
     </header>
   );
 };

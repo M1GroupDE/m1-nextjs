@@ -1,6 +1,5 @@
-"use client";
-import { CameraSquare } from "@solar-icons/react";
 import Link from "next/link";
+import { CameraSquareLinear } from "solar-icon-set";
 
 const Footer = () => {
   return (
@@ -28,16 +27,16 @@ const Footer = () => {
 
             <div className="socials flex-row">
               <Link href={"#"}>
-                <CameraSquare size={16} />
+                <CameraSquareLinear size={16} />
               </Link>
               <Link href={"#"}>
-                <CameraSquare size={16} />
+                <CameraSquareLinear size={16} />
               </Link>
               <Link href={"#"}>
-                <CameraSquare size={16} />
+                <CameraSquareLinear size={16} />
               </Link>
               <Link href={"#"}>
-                <CameraSquare size={16} />
+                <CameraSquareLinear size={16} />
               </Link>
             </div>
           </div>

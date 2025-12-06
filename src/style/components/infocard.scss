@@ -1,3 +1,5 @@
+@use "@/style/library/breakpoint" as *;
+
 .infocard {
   gap: 50px;
 
@@ -6,6 +8,10 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
     width: 100%;
+
+    @include lg {
+      grid-template-columns: repeat(1, 1fr);
+    }
 
     .box {
       background-color: white;

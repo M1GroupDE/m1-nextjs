@@ -1,6 +1,5 @@
-"use client";
-import { CheckCircle } from "@solar-icons/react";
 import Link from "next/link";
+import { CheckCircleLinear } from "solar-icon-set";
 
 const CheckList = ({ title, data, link, cta }) => {
   return (
@@ -10,7 +9,7 @@ const CheckList = ({ title, data, link, cta }) => {
         <div className="list">
           {data.map((item, index) => (
             <div className="box flex-row" key={index}>
-              <CheckCircle size={24} />
+              <CheckCircleLinear size={24} />
               <p>{item.title}</p>
             </div>
           ))}

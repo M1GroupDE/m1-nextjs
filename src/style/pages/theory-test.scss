@@ -1,18 +1,14 @@
+@use "@/style/library/breakpoint" as *;
+
 .theory-test {
   .iconcard {
     .list {
+      margin-bottom: 50px;
       grid-template-columns: repeat(4, 1fr);
-      padding: 0;
-    }
-  }
-
-  .infocard {
-    .list {
-      grid-template-columns: repeat(4, 1fr);
-
-      p {
-        font-weight: 200;
+      @include lg {
+        grid-template-columns: repeat(1, 1fr);
       }
+      padding: 0;
     }
   }
 }

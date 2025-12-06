@@ -1,9 +1,15 @@
+@use "@/style/library/breakpoint" as *;
+
 .hero {
   .hero-image {
     position: relative;
     img {
       width: 100%;
       border-radius: 32px;
+
+      @include lg {
+        height: 400px;
+      }
     }
     .content {
       gap: 20px;
@@ -12,7 +18,12 @@
       left: 70px;
       color: white;
       align-items: flex-start;
-      max-width: 400px;
+      max-width: 500px;
+
+      @include lg {
+        bottom: 50px;
+        left: 20px;
+      }
     }
   }
 }
