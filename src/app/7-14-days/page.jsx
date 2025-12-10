@@ -9,7 +9,7 @@ const iconCardData = [
   {
     icon: "/img/Schnell & effizient.png",
     title: "Schnell & effizient",
-    description: "Führerschein in 7–14 Tagen",
+    description: "Führerschein in 7-14 Tagen",
   },
   {
     icon: "/img/Flexible Zeiten.png",
@@ -52,7 +52,7 @@ const courseData = [
 const page = () => {
   return (
     <main id="days714">
-      <Hero img={"/img/714days-hero.png"} />
+      <Hero img={"/img/714days-hero.jpg"} />
       <PageIntro
         title="Dein Führerschein in nur 7-14 Tagen"
         description="Unsere Intensivkurse bringen dich schnell, strukturiert und stressfrei ans Ziel. Mit täglichem Theorieunterricht, individuell geplanten Fahrstunden und persönlicher Betreuung."

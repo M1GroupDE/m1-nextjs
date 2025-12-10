@@ -42,7 +42,7 @@ const infoCardData = [
 const page = () => {
   return (
     <main id="class-page" className="digital-services">
-      <Hero img={"/img/dg-hero.png"} />
+      <Hero img={"/img/dg-hero.jpg"} />
 
       <PageIntro
         title={"Digitale Services für deine Führerscheinausbildung"}

@@ -41,7 +41,7 @@ const infoData = [
 const page = () => {
   return (
     <main id="vr">
-      <Hero img={"/img/vr-hero.png"} />
+      <Hero img={"/img/vr-hero.jpg"} />
 
       <PageIntro
         title="Fahrtraining mit dem DEGENER 360°-Fahrsimulator"

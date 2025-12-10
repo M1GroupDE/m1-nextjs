@@ -46,7 +46,7 @@ const qaData = [
 const page = () => {
   return (
     <main id="days714">
-      <Hero img={"/img/Financing-hero.png"} />
+      <Hero img={"/img/Financing-hero.jpg"} />
       <PageIntro
         title="Führerschein finanzieren  flexibel, fair, stressfrei."
         description=" Wir wissen: Der Führerschein ist eine Investition. Mit unseren flexiblen Ratenmodellen kannst du deine Ausbildung bequem in kleinen monatlichen Beträgen bezahlen - ganz ohne finanzielle Belastung."
