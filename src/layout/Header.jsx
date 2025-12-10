@@ -14,20 +14,20 @@ const Header = () => {
 
       <nav className="nav flex-row">
         <div className="site-nav flex-row">
-          <Link href={"/contact"}>Dein Kontakt zu uns</Link>
-          <Link href={"#"}>get a driver's license</Link>
+          <Link href={"/contact"}>kontakt</Link>
+          <Link href={"#"}>Führerschein machen</Link>
 
           <div className="dropdown">
             <div className="dropdown-toggle flex-row">
-              <strong>further offer</strong>
+              <strong>Dienstleistungen</strong>
               <AltArrowDownBold />
             </div>
             <ul className="dropdown-menu">
               <li>
-                <Link href="7-14-days">Dein Führerschein in nur 7–14 Tagen</Link>
+                <Link href="7-14-days">Dein Führerschein in nur 7 14 Tagen</Link>
               </li>
               <li>
-                <Link href="/vr">DEGENER 360°-Fahrsimulator</Link>
+                <Link href="/vr">DEGENER 360°- Fahrsimulator</Link>
               </li>
               <li>
                 <Link href="/financing">Führerschein finanzieren</Link>
@@ -65,26 +65,26 @@ const Header = () => {
         <ul>
           <li>
             <Link href="/contact" onClick={() => setMobileOpen(false)}>
-              Dein Kontakt zu uns
+              kontakt
             </Link>
           </li>
           <li>
             <Link href="#" onClick={() => setMobileOpen(false)}>
-              get a driver's license
+              Führerschein machen
             </Link>
           </li>
           <li className="mobile-sub">
             <details>
-              <summary>further offer</summary>
+              <summary>Dienstleistungen</summary>
               <ul>
                 <li>
                   <Link href="/7-14-days" onClick={() => setMobileOpen(false)}>
-                    Dein Führerschein in nur 7–14 Tagen
+                    Dein Führerschein in nur 7-14 Tagen
                   </Link>
                 </li>
                 <li>
                   <Link href="/vr" onClick={() => setMobileOpen(false)}>
-                    DEGENER 360°-Fahrsimulator
+                    DEGENER 360°- Fahrsimulator
                   </Link>
                 </li>
                 <li>
