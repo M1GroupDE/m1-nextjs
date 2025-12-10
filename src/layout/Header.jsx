@@ -111,7 +111,7 @@ const Header = () => {
             </Link>
           </li>
           <li className="mobile-cta">
-            <Link href="#" className="btn-pr" onClick={() => setMobileOpen(false)}>
+            <Link href="#" onClick={() => setMobileOpen(false)}>
               JETZT ANMELDEN
             </Link>
           </li>
