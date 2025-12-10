@@ -1,5 +1,6 @@
 @use "@/style/library/variable" as *;
 @use "@/style/library/breakpoint" as *;
+@use "sass:color" as color;
 
 #home-page {
   .hero {
@@ -9,7 +10,7 @@
       border-color: $neutral;
 
       &:hover {
-        background-color: darken($neutral, 10%);
+        background-color: color.adjust($neutral, $lightness: -10%);
       }
     }
     img {

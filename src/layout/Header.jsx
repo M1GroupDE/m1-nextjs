@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <header id="header" className={`wrapper flex-row ${mobileOpen ? "mobile-open" : ""}`}>
       <Link href="/" className="logo">
-        <img src="img/logo.png" alt="" />
+        <img src="/img/logo.png" alt="" />
       </Link>
 
       <nav className="nav flex-row">
@@ -42,6 +42,8 @@ const Header = () => {
           </div>
 
           <Link href={"/about"}>Über uns</Link>
+
+          <Link href={"/blog"}>Blog</Link>
         </div>
 
         <div className="cta">
@@ -108,6 +110,12 @@ const Header = () => {
           <li>
             <Link href="/about" onClick={() => setMobileOpen(false)}>
               Über uns
+            </Link>
+          </li>
+
+          <li>
+            <Link href={"/blog"} onClick={() => setMobileOpen(false)}>
+              Blog
             </Link>
           </li>
           <li className="mobile-cta">

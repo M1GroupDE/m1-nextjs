@@ -28,22 +28,29 @@ const iconCardData = [
   },
 ];
 
-const qaData = [
-  {
-    q: "Muss ich Zinsen zahlen?",
-    a: "Inventore dignissimos corporis quisquam ducimus. Tempora quibusdam doloremque facere consectetur modi cupiditate quod, praesentium suscipit delectus quae blanditiis et harum vero porro quidem corporis laboriosam cum voluptas libero magni.",
-  },
-  {
-    q: "Wann beginnt die erste Rate?",
-    a: "Aliquid quo? Eveniet earum enim neque rem. Et soluta incidunt, aspernatur excepturi dolorem officia ex laborum neque, nulla pariatur esse reprehenderit est.",
-  },
-  {
-    q: "Kann ich früher alles bezahlen?",
-    a: "Soluta praesentium. Explicabo, aliquid quo? Eveniet earum enim neque rem. Et soluta incidunt, aspernatur excepturi dolorem officia ex laborum neque.",
-  },
-];
+const getQAData = async () => {
+  var url = new URL(`https://api.drivem1.de/website/faqs/`);
 
-const page = () => {
+  const res = await fetch(url, {
+    cache: "no-store",
+    method: "GET",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    // cache: "force-cache",
+    // next: { tags: ["blog-posts"] },
+  });
+
+  if (res.ok) {
+    const data = await res.json();
+    return data;
+  }
+  return notFound();
+};
+
+const page = async () => {
+  const qaData = await getQAData();
+
   return (
     <main id="days714">
       <Hero img={"/img/Financing-hero.jpg"} />

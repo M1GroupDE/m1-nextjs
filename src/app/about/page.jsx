@@ -4,7 +4,28 @@ import PageIntro from "@/components/PageIntro";
 import TopJob from "@/components/TopJob";
 import Vehicles from "@/components/Vehicles";
 
-const page = () => {
+const getCoachesData = async () => {
+  var url = new URL(`https://api.drivem1.de/website/employees/`);
+
+  const res = await fetch(url, {
+    cache: "no-store",
+    method: "GET",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    // cache: "force-cache",
+    // next: { tags: ["blog-posts"] },
+  });
+
+  if (res.ok) {
+    const data = await res.json();
+    return data;
+  }
+  return notFound();
+};
+
+const page = async () => {
+  const coachesData = await getCoachesData();
   return (
     <main id="about-page">
       <Hero
@@ -26,7 +47,7 @@ const page = () => {
 
       <TopJob />
 
-      <Coaches />
+      <Coaches data={coachesData} />
 
       <div className="unternehmen wrapper flex-col">
         <h2>Andere Unternehmen</h2>

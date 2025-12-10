@@ -29,14 +29,14 @@ const QA = ({ data, title }) => {
               className="question flex-row"
               onClick={() => setOpen(open === index ? null : index)}
             >
-              <h3>{item.q}</h3>
+              <h3>{item.question}</h3>
               <AltArrowDownLinear
                 size={24}
                 className={`arrow ${open === index ? "active" : ""}`}
               />
             </div>
             <div className="answer" ref={(el) => (refs.current[index] = el)}>
-              <p>{item.a}</p>
+              <p>{item.answer}</p>
             </div>
           </div>
         ))}

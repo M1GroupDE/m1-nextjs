@@ -6,14 +6,7 @@ import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-const data = [
-  { img: "/img/couch.jpg", title: "name and lastname 1", subtitle: "test subtilte" },
-  { img: "/img/couch.jpg", title: "name and lastname 2", subtitle: "test subtilte" },
-  { img: "/img/couch.jpg", title: "name and lastname 3", subtitle: "test subtilte" },
-  { img: "/img/couch.jpg", title: "name and lastname 4", subtitle: "test subtilte" },
-  { img: "/img/couch.jpg", title: "name and lastname 5", subtitle: "test subtilte" },
-];
-const Coaches = () => {
+const Coaches = ({ data }) => {
   const prevRef = useRef(null);
   const nextRef = useRef(null);
 
@@ -58,11 +51,11 @@ const Coaches = () => {
             <SwiperSlide key={item.title}>
               <div className="box">
                 <div class="image-wrapper">
-                  <img src={item.img} alt={item.title} />
+                  <img src={item.photo} alt={item.name} />
                 </div>
                 <div className="content flex-col">
-                  <strong>{item.title}</strong>
-                  <small>{item.subtitle}</small>
+                  <strong>{item.name}</strong>
+                  <small>{item.position}</small>
                 </div>
               </div>
             </SwiperSlide>
