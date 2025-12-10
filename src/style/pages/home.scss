@@ -14,7 +14,8 @@
     }
     img {
       height: 600px;
-      clip-path: polygon(0 0, 100% 0, 100% 80%, 45% 80%, 40% 100%, 0 100%);
+      clip-path: url(#roundedShape);
+
       object-position: right;
 
       @include lg {
@@ -23,7 +24,7 @@
     }
   }
   .sub-hero {
-    margin-top: -160px;
+    margin-top: -200px;
     gap: 50px;
     justify-content: space-between;
     .text {

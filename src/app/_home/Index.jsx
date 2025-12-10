@@ -68,6 +68,15 @@ const Index = () => {
         ctaLink={"#"}
       />
 
+      <svg width="0" height="0" viewBox="0 0 1248 651" xmlns="http://www.w3.org/2000/svg">
+        <clipPath id="roundedShape" clipPathUnits="objectBoundingBox">
+          <path
+            d="M0 32C0 14.3269 14.3269 0 32 0H745.388H830H1216C1233.67 0 1248 14.3269 1248 32V502.082C1248 519.755 1233.67 534.082 1216 534.082H581.242C571.034 534.082 561.438 538.953 555.412 547.193L489.088 637.889C483.062 646.129 473.466 651 463.258 651H32C14.3269 651 0 636.673 0 619V32Z"
+            transform="scale(0.000801, 0.001537)"
+          />
+        </clipPath>
+      </svg>
+
       <div className="sub-hero flex-row wrapper">
         <div className="text">
           <p>
