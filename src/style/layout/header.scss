@@ -34,8 +34,9 @@
     .site-nav {
       gap: 30px;
 
-      a {
-        font-weight: bold;
+      a,
+      strong {
+        font-weight: 500;
       }
 
       > a {

@@ -8,7 +8,7 @@ const page = () => {
   return (
     <main id="about-page">
       <Hero
-        img={"/img/about-hero.png"}
+        img={"/img/about-hero.jpg"}
         title={"Über M1"}
         subtitle={
           "Jeder Mensch hat einen eigenen Fahrstil. Warum sollte das nicht auch fürs Lernen gelten?"

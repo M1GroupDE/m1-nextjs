@@ -74,8 +74,12 @@ const Footer = () => {
 
         <hr />
 
-        <section className="f3">
-          <p>All Rights Reserved</p>
+        <section className="f3 flex-row">
+          <Link href={"/datenschutz"}>Datenschutz</Link>
+          <Link href={"/impressum"}>Impressum</Link>
+          <a target="_blank" rel="noopener noreferrer" download href={"/AGB_M1Group.pdf"}>
+            AGB
+          </a>
         </section>
       </div>
     </footer>
