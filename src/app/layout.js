@@ -1,8 +1,8 @@
 import Footer from "@/layout/Footer";
 import Header from "@/layout/Header";
+import Providers from "@/providers";
 import "@/style/style.scss";
 import { Inter } from "next/font/google";
-
 const InterFont = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
     <html lang="en" dir="ltr">
       <body className={`${InterFont.className}`}>
         <Header />
-        {children}
+        <Providers>{children}</Providers>
         <Footer />
       </body>
     </html>
