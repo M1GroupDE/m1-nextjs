@@ -58,26 +58,52 @@ const checkListData = [
   { title: "anerkannter, amtlicher Ausweis (z.B. Personalausweis, Reisepass)" },
 ];
 
-const qaData = [
-  {
-    q: "Ab welchem Alter kann ich mich anmelden?",
-    a: "Inventore dignissimos corporis quisquam ducimus. Tempora quibusdam doloremque facere consectetur modi cupiditate quod, praesentium suscipit delectus quae blanditiis et harum vero porro quidem corporis laboriosam cum voluptas libero magni.",
-  },
-  {
-    q: "Wie starte ich mit dem Theorieunterricht?",
-    a: "Aliquid quo? Eveniet earum enim neque rem. Et soluta incidunt, aspernatur excepturi dolorem officia ex laborum neque, nulla pariatur esse reprehenderit est.",
-  },
-  {
-    q: "Welche Unterlagen benötige ich für die Anmeldung?",
-    a: "Soluta praesentium. Explicabo, aliquid quo? Eveniet earum enim neque rem. Et soluta incidunt, aspernatur excepturi dolorem officia ex laborum neque.",
-  },
-  {
-    q: "Welche Fahrzeuge werden für die Ausbildung verwendet?",
-    a: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil corrupti, officia voluptate rem porro animi rerum.",
-  },
-];
+const getQAData = async () => {
+  var url = new URL(`https://api.drivem1.de/website/faqs/`);
 
-const page = () => {
+  const res = await fetch(url, {
+    cache: "no-store",
+    method: "GET",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    // cache: "force-cache",
+    // next: { tags: ["blog-posts"] },
+  });
+
+  if (res.ok) {
+    const data = await res.json();
+    return data;
+  }
+  return notFound();
+};
+
+const getCoachesData = async () => {
+  var url = new URL(`https://api.drivem1.de/website/employees/`);
+
+  const res = await fetch(url, {
+    cache: "no-store",
+    method: "GET",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    // cache: "force-cache",
+    // next: { tags: ["blog-posts"] },
+  });
+
+  if (res.ok) {
+    const data = await res.json();
+    return data;
+  }
+  return notFound();
+};
+
+const page = async () => {
+  const CoachesDataReq = getCoachesData();
+  const QADataReq = getQAData();
+
+  const [coachesData, qaData] = await Promise.all([CoachesDataReq, QADataReq]);
+
   return (
     <main id="class-page">
       <Hero
@@ -108,7 +134,7 @@ const page = () => {
 
       <QA data={qaData} title={"Häufig gestellte Fragen"} />
 
-      <Coaches />
+      <Coaches data={coachesData} />
     </main>
   );
 };
