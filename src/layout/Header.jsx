@@ -24,10 +24,10 @@ const Header = () => {
             </div>
             <ul className="dropdown-menu">
               <li>
-                <Link href="7-14-days">Dein Führerschein in nur 7 14 Tagen</Link>
+                <Link href="7-14-days">Dein Führerschein in nur 7-14 Tagen</Link>
               </li>
               <li>
-                <Link href="/vr">DEGENER 360°- Fahrsimulator</Link>
+                <Link href="/vr">DEGENER 360° - Fahrsimulator</Link>
               </li>
               <li>
                 <Link href="/financing">Führerschein finanzieren</Link>
@@ -84,7 +84,7 @@ const Header = () => {
                 </li>
                 <li>
                   <Link href="/vr" onClick={() => setMobileOpen(false)}>
-                    DEGENER 360°- Fahrsimulator
+                    DEGENER 360° - Fahrsimulator
                   </Link>
                 </li>
                 <li>
