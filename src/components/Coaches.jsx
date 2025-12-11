@@ -50,7 +50,7 @@ const Coaches = ({ data }) => {
           {data.map((item) => (
             <SwiperSlide key={item.title}>
               <div className="box">
-                <div class="image-wrapper">
+                <div className="image-wrapper">
                   <img src={item.photo} alt={item.name} />
                 </div>
                 <div className="content flex-col">

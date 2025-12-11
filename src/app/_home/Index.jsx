@@ -78,11 +78,36 @@ const getCoachesData = async () => {
   return notFound();
 };
 
+const getBranchesData = async () => {
+  var url = new URL(`https://api.drivem1.de/website/branches/`);
+
+  const res = await fetch(url, {
+    cache: "no-store",
+    method: "GET",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    // cache: "force-cache",
+    // next: { tags: ["blog-posts"] },
+  });
+
+  if (res.ok) {
+    const data = await res.json();
+    return data;
+  }
+  return notFound();
+};
+
 const Index = async () => {
   const CoachesDataReq = getCoachesData();
   const QADataReq = getQAData();
+  const BranchesDataReq = getBranchesData();
 
-  const [coachesData, qaData] = await Promise.all([CoachesDataReq, QADataReq]);
+  const [coachesData, qaData, branchesData] = await Promise.all([
+    CoachesDataReq,
+    QADataReq,
+    BranchesDataReq,
+  ]);
 
   return (
     <main id="home-page">
@@ -210,7 +235,7 @@ const Index = async () => {
         link={"#"}
       />
 
-      <Branches />
+      <Branches data={branchesData} />
 
       <Besonderheiten />
 
