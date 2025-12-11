@@ -5,6 +5,7 @@
   .contact-info {
     width: 100%;
     gap: 100px;
+    align-items: start;
 
     .info {
       width: 50%;
@@ -16,6 +17,9 @@
 
       .socials {
         gap: 5px;
+        svg:hover {
+          fill: $pr;
+        }
       }
     }
 
@@ -28,11 +32,33 @@
       border-radius: 32px;
     }
 
+    .success {
+      border: 1px solid #21b532;
+      padding: 10px;
+      border-radius: 12px;
+      background-color: #21b532db;
+      color: white;
+    }
+
+    .error {
+      border: 1px solid #b62024;
+      padding: 10px;
+      border-radius: 12px;
+      background-color: #b62025d8;
+      color: white;
+    }
+
     @include lg {
       flex-direction: column;
+      gap: 50px;
+
       .info,
       .form {
         width: 100%;
+      }
+
+      .form {
+        padding: 50px 20px;
       }
     }
   }

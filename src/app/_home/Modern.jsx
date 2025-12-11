@@ -24,10 +24,10 @@ const Modern = () => {
         </ul>
 
         <div className="cta flex-row">
-          <Link href={"#"} className="btn-pr">
+          <Link href={"/contact"} className="btn-pr">
             JETZT ANMELDEN
           </Link>
-          <Link href={"#"} className="btn-sc">
+          <Link href={"about"} className="btn-sc">
             ÜBER UNS
           </Link>
         </div>

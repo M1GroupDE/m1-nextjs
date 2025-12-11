@@ -130,7 +130,7 @@ const page = async () => {
           "Der Motorradführerschein A erlaubt das Fahren aller Krafträder ohne Leistungsbegrenzung – für echte Motorradliebhaber:innen, die maximale Freiheit genießen wollen."
         }
         cta={"JETZT ANMELDEN"}
-        link={"#"}
+        link={"/contact"}
       />
 
       <IconCard title={"Schnelle Fakten zur Klasse B"} data={iconCardData} />

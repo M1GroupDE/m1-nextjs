@@ -29,7 +29,7 @@ const Vertrau = () => {
         </strong>
 
         <div className="cta flex-row">
-          <Link href={"#"} className="btn-pr">
+          <Link href={"/contact"} className="btn-pr">
             JETZT ANMELDEN
           </Link>
         </div>

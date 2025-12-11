@@ -36,7 +36,7 @@ const page = () => {
           "Übe mit offiziellen Prüfungsfragen, interaktiven Tests und sofortigem Feedback. Perfekt zur Vorbereitung auf deine Theorieprüfung."
         }
         cta={"JETZT ANMELDEN"}
-        link={"#"}
+        link={"/contact"}
       />
 
       <IconCard title={"Wie funktioniert das Lernen?"} data={iconCardData} />

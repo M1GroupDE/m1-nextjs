@@ -15,7 +15,27 @@ const Header = () => {
       <nav className="nav flex-row">
         <div className="site-nav flex-row">
           <Link href={"/contact"}>kontakt</Link>
-          <Link href={"#"}>Führerschein machen</Link>
+
+          <div className="dropdown">
+            <div className="dropdown-toggle flex-row">
+              <strong>Führerschein machen</strong>
+              <AltArrowDownBold />
+            </div>
+            <ul className="dropdown-menu">
+              <li>
+                <Link href="/class-b">Auto</Link>
+              </li>
+              <li>
+                <Link href="/class-a">MOTORRAD</Link>
+              </li>
+              <li>
+                <Link href="#">AUTO-ANHÄNGER</Link>
+              </li>
+              <li>
+                <Link href="#">TRAKTOR</Link>
+              </li>
+            </ul>
+          </div>
 
           <div className="dropdown">
             <div className="dropdown-toggle flex-row">
@@ -33,7 +53,7 @@ const Header = () => {
                 <Link href="/financing">Führerschein finanzieren</Link>
               </li>
               <li>
-                <Link href="/digital-services">Digitale Services</Link>
+                <Link href="/digital-services">Digitale Dienste</Link>
               </li>
               <li>
                 <Link href="/theory-test">Fragen für die Theorieprüfung</Link>
@@ -47,7 +67,7 @@ const Header = () => {
         </div>
 
         <div className="cta">
-          <Link href={"#"} className="btn-pr">
+          <Link href={"/contact"} className="btn-pr">
             JETZT ANMELDEN
           </Link>
         </div>
@@ -70,10 +90,32 @@ const Header = () => {
               kontakt
             </Link>
           </li>
-          <li>
-            <Link href="#" onClick={() => setMobileOpen(false)}>
-              Führerschein machen
-            </Link>
+          <li className="mobile-sub">
+            <details>
+              <summary>Führerschein machen</summary>
+              <ul>
+                <li>
+                  <Link href="/class-b" onClick={() => setMobileOpen(false)}>
+                    Auto
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/class-a" onClick={() => setMobileOpen(false)}>
+                    MOTORRAD
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#" onClick={() => setMobileOpen(false)}>
+                    AUTO-ANHÄNGER
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#" onClick={() => setMobileOpen(false)}>
+                    TRAKTOR
+                  </Link>
+                </li>
+              </ul>
+            </details>
           </li>
           <li className="mobile-sub">
             <details>
@@ -96,7 +138,7 @@ const Header = () => {
                 </li>
                 <li>
                   <Link href="/digital-services" onClick={() => setMobileOpen(false)}>
-                    Digitale Services
+                    Digitale Dienste
                   </Link>
                 </li>
                 <li>

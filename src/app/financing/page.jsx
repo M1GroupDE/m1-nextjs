@@ -58,7 +58,7 @@ const page = async () => {
         title="Führerschein finanzieren  flexibel, fair, stressfrei."
         description=" Wir wissen: Der Führerschein ist eine Investition. Mit unseren flexiblen Ratenmodellen kannst du deine Ausbildung bequem in kleinen monatlichen Beträgen bezahlen - ganz ohne finanzielle Belastung."
         cta="JETZT ANMELDEN"
-        link="#"
+        link="/contact"
       />
       <IconCard title={"So funktioniert’s"} data={iconCardData} />
 

@@ -1,56 +1,62 @@
+"use client";
 import { StarBold } from "solar-icon-set";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
-const data = [
-  {
-    name: "Name1",
-    description: "Description",
-    review: "“A fantastic bit of feedback”",
-    rate: 5,
-  },
-  {
-    name: "Name2",
-    description: "Description",
-    review: "“A fantastic bit of feedback”",
-    rate: 4,
-  },
-  {
-    name: "Name3",
-    description: "Description",
-    review: "“A fantastic bit of feedback”",
-    rate: 3,
-  },
-];
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
 
-const Feedbacks = () => {
+const Feedbacks = ({ data }) => {
   return (
     <section className="feedbacks wrapper flex-col">
       <h2>Schritte zum Erhalt des Zertifikats</h2>
 
       <div className="list">
-        {data.map((item, index) => (
-          <div key={index} className="box flex-col">
-            <p className="review">{item.review}</p>
+        <Swiper
+          modules={[Navigation, Autoplay, Pagination]}
+          autoplay={{ delay: 3000, disableOnInteraction: true }}
+          loop
+          spaceBetween={20}
+          slidesPerView={3}
+          pagination={{
+            dynamicBullets: true,
+          }}
+          breakpoints={{
+            0: {
+              slidesPerView: 1,
+            },
+            768: {
+              slidesPerView: 1,
+            },
+            1024: {
+              slidesPerView: 3,
+            },
+          }}
+        >
+          {data?.map((item) => (
+            <SwiperSlide key={item.id}>
+              <div key={item.id} className="box flex-col">
+                <p className="review">"{item.content}"</p>
 
-            <div className="footer flex-row">
-              <div className="profile flex-row">
-                <div className="img"></div>
-                <div className="flex-col title">
-                  <strong>{item.name}</strong>
-                  <small>{item.description}</small>
+                <div className="footer flex-row">
+                  <div className="profile flex-row">
+                    <div className="img">{<img src={item.photo} alt={item.name} />}</div>
+                    <div className="flex-col title">
+                      <strong>{item.name}</strong>
+                      <small>{item.position}</small>
+                    </div>
+                  </div>
+                  <div className="rate">
+                    {Array.from({ length: 5 }, (_, index) => (
+                      <StarBold key={index} weight={"Bold"} color={"#E7B65F"} />
+                    ))}
+                  </div>
                 </div>
               </div>
-              <div className="rate">
-                {Array.from({ length: 5 }, (_, index) => (
-                  <StarBold
-                    key={index}
-                    weight={"Bold"}
-                    color={index < item.rate ? "#E7B65F" : "gray"}
-                  />
-                ))}
-              </div>
-            </div>
-          </div>
-        ))}
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
     </section>
   );

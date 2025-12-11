@@ -98,15 +98,37 @@ const getBranchesData = async () => {
   return notFound();
 };
 
+const getFeedbacksData = async () => {
+  var url = new URL(`https://api.drivem1.de/website/comments/`);
+
+  const res = await fetch(url, {
+    cache: "no-store",
+    method: "GET",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    // cache: "force-cache",
+    // next: { tags: ["blog-posts"] },
+  });
+
+  if (res.ok) {
+    const data = await res.json();
+    return data;
+  }
+  return notFound();
+};
+
 const Index = async () => {
   const CoachesDataReq = getCoachesData();
   const QADataReq = getQAData();
   const BranchesDataReq = getBranchesData();
+  const FeedbacksDataReq = getFeedbacksData();
 
-  const [coachesData, qaData, branchesData] = await Promise.all([
+  const [coachesData, qaData, branchesData, feedbacksData] = await Promise.all([
     CoachesDataReq,
     QADataReq,
     BranchesDataReq,
+    FeedbacksDataReq,
   ]);
 
   return (
@@ -116,7 +138,7 @@ const Index = async () => {
         title={"Modern, familiär, digital"}
         subtitle={"Deine Wahl, deine Schule – Egal, Auto, Motorrad"}
         ctaTitle={"JETZT ANMELDEN"}
-        ctaLink={"#"}
+        ctaLink={"/contact"}
       />
 
       <svg width="0" height="0" viewBox="0 0 1248 651" xmlns="http://www.w3.org/2000/svg">
@@ -231,8 +253,8 @@ const Index = async () => {
       <CtaBox
         title={"Führerschein jetzt starten - bequem in Raten zahlen"}
         img={"/img/cta-1.jpg"}
-        cta={"JETZT ANMELDEN"}
-        link={"#"}
+        cta={"Mehr erfahren"}
+        link={"/financing"}
       />
 
       <Branches data={branchesData} />
@@ -244,8 +266,8 @@ const Index = async () => {
       <CtaBox
         title={"Fahrtraining mit dem DEGENER 360° - Fahrsimulator"}
         img={"/img/cta-2.jpg"}
-        cta={"JETZT ANMELDEN"}
-        link={"#"}
+        cta={"Mehr erfahren"}
+        link={"/vr"}
       />
 
       <Vertrau />
@@ -260,12 +282,12 @@ const Index = async () => {
 
       <CtaBox
         title={"Fragen zur Theorieprüfung"}
-        cta={"JETZT ANMELDEN"}
-        link={"#"}
+        cta={"Mehr erfahren"}
+        link={"/theory-test"}
         img={"/img/cta-3.jpg"}
       />
 
-      <Feedbacks />
+      <Feedbacks data={feedbacksData} />
 
       <Vehicles />
 

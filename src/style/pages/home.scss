@@ -16,7 +16,6 @@
     img {
       height: 600px;
       clip-path: url(#roundedShape);
-
       object-position: right;
 
       @include lg {
@@ -40,6 +39,10 @@
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 20px;
+
+      @include lg {
+        gap: 10px;
+      }
 
       .card {
         background-color: $neutral;
@@ -78,7 +81,7 @@
     }
 
     @include lg {
-      margin-top: unset;
+      margin-top: -50px;
       flex-direction: column;
 
       .text {
@@ -229,15 +232,17 @@
 
     .list {
       width: 100%;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 50px;
 
-      @include lg {
-        grid-template-columns: repeat(1, 1fr);
-        gap: 20px;
+      .swiper {
+        width: 100% !important;
       }
-
+      .swiper-wrapper {
+        box-sizing: border-box;
+      }
+      .swiper-slide {
+        box-sizing: border-box;
+        min-width: 0;
+      }
       .box {
         background-color: white;
         padding: 20px;
@@ -258,6 +263,15 @@
               height: 50px;
               border-radius: 50%;
               background-color: $neutral;
+              overflow: hidden;
+              display: inline-block;
+
+              img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
             }
           }
 
@@ -267,6 +281,22 @@
             border-radius: 25px;
           }
         }
+      }
+    }
+    .review {
+      word-break: break-word;
+      overflow-wrap: break-word;
+    }
+
+    .swiper {
+      overflow: visible;
+    }
+
+    .swiper-pagination {
+      margin-bottom: -30px;
+
+      .swiper-pagination-bullet-active {
+        background: $pr;
       }
     }
   }

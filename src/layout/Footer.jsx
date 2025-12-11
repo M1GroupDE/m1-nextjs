@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ArrowRightUpLinear } from "solar-icon-set";
 
 const Footer = () => {
   return (
@@ -9,7 +10,7 @@ const Footer = () => {
             <img src="/img/logo.png" alt="" />
           </Link>
           <div className="cta">
-            <Link href={"#"} className="btn-pr">
+            <Link href={"/contact"} className="btn-pr">
               JETZT ANMELDEN
             </Link>
           </div>
@@ -84,31 +85,45 @@ const Footer = () => {
           </div>
 
           <div className="col-2 flex-col">
-            <p className="title">ÜBER UNS</p>
+            <p className="title">Verwandte Links</p>
             <nav className="flex-col">
-              <Link href={"#"}>
-                <strong>Lerne unsere Fahrzeuge kennen</strong>
+              <Link href={"/blog"}>
+                <strong>Blog</strong>
+                <ArrowRightUpLinear size={12} />
               </Link>
-              <Link href={"#"}>
-                <strong>Dein Kontakt zu uns</strong>
+              <Link href={"/contact"}>
+                <strong>Kontakt</strong>
+                <ArrowRightUpLinear size={12} />
               </Link>
-              <Link href={"#"}>
-                <strong>Unsere Standorte</strong>
+              <Link href={"/about"}>
+                <strong>Über uns</strong>
+                <ArrowRightUpLinear size={12} />
               </Link>
             </nav>
           </div>
 
           <div className="col-3 flex-col">
-            <p className="title">WEITERE ANGEBOTE</p>
+            <p className="title">Weitere Dienstleistungen</p>
             <nav className="flex-col">
-              <Link href={"#"}>
-                <strong>Fragen zur Theorieprüfung</strong>
+              <Link href={"/7-14-days"}>
+                <strong>Dein Führerschein in nur 7-14 Tagen</strong>
+                <ArrowRightUpLinear size={12} />
               </Link>
-              <Link href={"#"}>
+              <Link href={"/vr"}>
                 <strong>Fahrsimulator DEGENER 360°</strong>
+                <ArrowRightUpLinear size={12} />
               </Link>
-              <Link href={"#"}>
-                <strong>Ratenzahlung</strong>
+              <Link href={"/financing"}>
+                <strong>Führerschein finanzieren</strong>
+                <ArrowRightUpLinear size={12} />
+              </Link>
+              <Link href={"/digital-services"}>
+                <strong>Digitale Dienste</strong>
+                <ArrowRightUpLinear size={12} />
+              </Link>
+              <Link href={"/theory-test"}>
+                <strong>Fragen für die Theorieprüfung</strong>
+                <ArrowRightUpLinear size={12} />
               </Link>
             </nav>
           </div>
@@ -118,10 +133,10 @@ const Footer = () => {
 
         <section className="f3 flex-row">
           <Link href={"/datenschutz"}>Datenschutz</Link>
-          <Link href={"/impressum"}>Impressum</Link>
           <a target="_blank" rel="noopener noreferrer" download href={"/AGB_M1Group.pdf"}>
             AGB
           </a>
+          <Link href={"/impressum"}>Impressum</Link>
         </section>
       </div>
     </footer>

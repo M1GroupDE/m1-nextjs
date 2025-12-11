@@ -47,7 +47,7 @@ const page = () => {
         title="Fahrtraining mit dem DEGENER 360°-Fahrsimulator"
         description="Realistisch, sicher und bis zu 70 % günstiger als eine normale Fahrstunde – perfekt für den Einstieg und effizientes Lernen."
         cta="JETZT ANMELDEN"
-        link="#"
+        link="/contact"
       />
 
       <IconCard title={"Vorteile"} data={iconCardData} />

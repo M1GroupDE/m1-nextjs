@@ -48,3 +48,7 @@
   border-color: $pr;
   border-radius: 50px;
 }
+
+button:disabled {
+  opacity: 0.7;
+}

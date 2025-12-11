@@ -57,7 +57,7 @@ const page = () => {
         title="Dein Führerschein in nur 7-14 Tagen"
         description="Unsere Intensivkurse bringen dich schnell, strukturiert und stressfrei ans Ziel. Mit täglichem Theorieunterricht, individuell geplanten Fahrstunden und persönlicher Betreuung."
         cta="JETZT ANMELDEN"
-        link="#"
+        link="/contact"
       />
       <IconCard title={"So funktioniert’s"} data={iconCardData} />
 

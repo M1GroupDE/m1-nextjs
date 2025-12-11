@@ -3,7 +3,7 @@ import { useRef } from "react";
 import { AltArrowLeftBold, AltArrowRightBold } from "solar-icon-set";
 import "swiper/css";
 import "swiper/css/navigation";
-import { Navigation } from "swiper/modules";
+import { Autoplay, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 const Coaches = ({ data }) => {
@@ -26,7 +26,8 @@ const Coaches = ({ data }) => {
 
       <div className="slider">
         <Swiper
-          modules={[Navigation]}
+          modules={[Navigation, Autoplay]}
+          autoplay={{ delay: 3000, disableOnInteraction: true }}
           loop
           spaceBetween={20}
           slidesPerView={4}

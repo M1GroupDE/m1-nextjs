@@ -1,11 +1,13 @@
 @use "@/style/library/breakpoint" as *;
+@use "@/style/library/variable" as *;
 
 footer {
   background-color: white;
+  height: fit-content;
 
   .content {
     width: 100%;
-    gap: 50px;
+    gap: 30px;
   }
 
   .f1 {
@@ -33,6 +35,10 @@ footer {
 
       .socials {
         gap: 10px;
+
+        svg:hover {
+          fill: $pr;
+        }
       }
     }
 

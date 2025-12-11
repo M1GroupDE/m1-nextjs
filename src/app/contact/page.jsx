@@ -1,6 +1,7 @@
 import Branches from "@/components/Branches";
 import Hero from "@/components/Hero";
 import Link from "next/link";
+import Form from "./Form";
 
 const getBranchesData = async () => {
   var url = new URL(`https://api.drivem1.de/website/branches/`);
@@ -42,10 +43,10 @@ const page = async () => {
           <div className="call">
             <p>Callcenter:</p>
             <p>
-              <strong>+49 123 456789</strong>
+              <strong>78543337</strong>
             </p>
             <p>
-              <strong>+49 123 456781</strong>
+              <strong>095773578996</strong>
             </p>
           </div>
 
@@ -114,30 +115,7 @@ const page = async () => {
             </p>
           </div>
 
-          <form className="flex-col">
-            <label htmlFor="firstName">Vorname</label>
-            <input
-              type="text"
-              id="firstName"
-              placeholder="Geben Sie Ihren Vornamen ein"
-            />
-
-            <label htmlFor="lastName">Nachname</label>
-            <input
-              type="text"
-              id="lastName"
-              placeholder="Geben Sie Ihren Nachnamen ein"
-            />
-
-            <label htmlFor="email">E-Mail</label>
-            <input
-              type="email"
-              id="email"
-              placeholder="Geben Sie Ihre E-Mail-Adresse ein"
-            />
-
-            <button className="btn-pr">Absenden</button>
-          </form>
+          <Form />
         </div>
       </div>
 

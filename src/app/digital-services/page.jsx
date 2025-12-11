@@ -45,12 +45,12 @@ const page = () => {
       <Hero img={"/img/dg-hero.jpg"} />
 
       <PageIntro
-        title={"Digitale Services für deine Führerscheinausbildung"}
+        title={"Digitale Dienste für deine Führerscheinausbildung"}
         description={
           "Lerne flexibel, modern und effizient – mit unseren digitalen Tools, Online-Unterricht und 360°-Simulator."
         }
         cta={"JETZT ANMELDEN"}
-        link={"#"}
+        link={"/contact"}
       />
 
       <IconCard title={"Vorteile"} data={iconCardData} />

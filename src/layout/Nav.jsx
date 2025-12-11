@@ -24,7 +24,7 @@ const Nav = () => {
               <Link href="#">Führerschein finanzieren</Link>
             </li>
             <li>
-              <Link href="#">Digitale Services</Link>
+              <Link href="#">Digitale Dienste</Link>
             </li>
             <li>
               <Link href="#">Fragen für die Theorieprüfung</Link>
@@ -36,7 +36,7 @@ const Nav = () => {
       </div>
 
       <div className="cta">
-        <Link href={"#"} className="btn-pr">
+        <Link href={"/contact"} className="btn-pr">
           JETZT ANMELDEN
         </Link>
       </div>

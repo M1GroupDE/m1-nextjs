@@ -12,7 +12,8 @@
 
     @include lg {
       grid-template-columns: repeat(2, 1fr);
-      padding: 0 20px;
+      padding: 0 0px;
+      gap: 10px;
       &:has(:nth-last-child(1):nth-child(odd)) {
         > :last-child {
           grid-column: 1 / -1;
