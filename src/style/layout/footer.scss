@@ -3,7 +3,6 @@
 
 footer {
   background-color: white;
-  height: fit-content;
 
   .content {
     width: 100%;
@@ -30,8 +29,9 @@ footer {
 
     .col-1 {
       justify-content: space-between;
-      height: -webkit-fill-available;
       max-width: 600px;
+
+      gap: 20px;
 
       .socials {
         gap: 10px;
@@ -44,9 +44,6 @@ footer {
 
     @include lg {
       flex-direction: column;
-      .socials {
-        margin-top: 20px;
-      }
     }
 
     .col-2,

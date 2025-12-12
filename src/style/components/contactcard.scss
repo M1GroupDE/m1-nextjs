@@ -7,14 +7,14 @@
     gap: 50px;
     justify-content: start;
     @include lg {
-      gap: 20px;
+      gap: 10px;
     }
 
     img {
       border-radius: 24px;
       max-height: 270px;
       @include lg {
-        max-height: 200px;
+        max-height: 170px;
       }
     }
 
@@ -25,12 +25,16 @@
 
       height: -webkit-fill-available;
 
+      @include lg {
+        gap: 20px;
+      }
+
       .header {
         gap: 10px;
       }
 
       .footer {
-        gap: 10px;
+        gap: 5px;
 
         .box {
           gap: 5px;
