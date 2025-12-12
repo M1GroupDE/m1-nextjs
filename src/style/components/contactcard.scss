@@ -4,30 +4,26 @@
   gap: 50px;
 
   .content {
-    gap: 50px;
+    gap: 20px;
     justify-content: start;
+    align-items: start;
+
     @include lg {
       gap: 10px;
     }
 
     img {
       border-radius: 24px;
-      max-height: 270px;
+      max-height: 220px;
       @include lg {
         max-height: 170px;
       }
     }
 
     .contact-details {
-      gap: 50px;
+      gap: 20px;
       align-items: start;
       justify-content: start;
-
-      height: -webkit-fill-available;
-
-      @include lg {
-        gap: 20px;
-      }
 
       .header {
         gap: 10px;
