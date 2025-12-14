@@ -2,8 +2,15 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import Slider from "./Slider";
 
+export const metadata = {
+  title: "Blog - Tipps und Wissenswertes rund um deinen Führerschein",
+  description:
+    "Lese interessante Artikel und Tipps rund um Führerschein, Fahrausbildung und Fahrsicherheit. Der Blog von M1 Academy mit hilfreichen Themen.",
+};
+
 const getPosts = async (page) => {
   var url = new URL("https://api.drivem1.de/" + "article/articles/");
+
   url.searchParams.set("page", page || 1);
 
   const res = await fetch(url, {
@@ -18,7 +25,7 @@ const getPosts = async (page) => {
 
   if (res.ok) {
     const data = await res.json();
-    return data.results;
+    return data;
   }
   return notFound();
 };
@@ -35,16 +42,24 @@ const formatDateGerman = (dateString) => {
 };
 
 const page = async ({ searchParams }) => {
-  const page = (await searchParams).page;
+  const pageNum = parseInt((await searchParams).page) || 1;
 
-  const data = await getPosts(page);
+  const data = await getPosts(pageNum);
+  const posts = data.results;
+  const totalCount = data.count;
+  const hasNext = !!data.next;
+  const hasPrev = !!data.previous;
+
+  // Calculate total pages
+  const postsPerPage = posts.length;
+  const totalPages = Math.ceil(totalCount / postsPerPage);
 
   return (
     <main id="blog-page" className="wrapper">
-      <Slider data={data.slice(0, 2)} />
+      <Slider data={posts.slice(0, 2)} />
 
       <div className="list">
-        {data.map((item) => (
+        {posts.map((item) => (
           <div key={item.id} className="list-item flex-row">
             <img src={item.photo} alt={item.title} />
 
@@ -62,6 +77,28 @@ const page = async ({ searchParams }) => {
             </div>
           </div>
         ))}
+      </div>
+
+      {/* Pagination */}
+      <div className="pagination flex-row">
+        {pageNum > 1 && (
+          <Link href={`/blog?page=${pageNum - 1}`} className="btn-pagination btn-pr">
+            ←
+          </Link>
+        )}
+
+        <div className="page-info">
+          <span>
+            Seite <strong>{pageNum}</strong> von <strong>{totalPages}</strong>
+          </span>
+          <span className="posts-count">({totalCount} Artikel insgesamt)</span>
+        </div>
+
+        {hasNext && (
+          <Link href={`/blog?page=${pageNum + 1}`} className="btn-pagination btn-pr">
+            →
+          </Link>
+        )}
       </div>
     </main>
   );

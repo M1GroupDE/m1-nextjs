@@ -1,5 +1,11 @@
 import Hero from "@/components/Hero";
 
+export const metadata = {
+  title: "Impressum - M1 Academy",
+  description:
+    "Impressum und Kontaktinformationen von M1 Academy. Alle rechtlichen Angaben gemäß Telemediengesetz.",
+};
+
 const page = () => {
   return (
     <main id="policy">

@@ -4,6 +4,12 @@ import PageIntro from "@/components/PageIntro";
 import TopJob from "@/components/TopJob";
 import Vehicles from "@/components/Vehicles";
 
+export const metadata = {
+  title: "Über M1 Academy - Moderne Fahrschule mit Erfahrung",
+  description:
+    "Erfahre mehr über M1 Academy: Unsere Mission, unser 10.000 m² großer Übungsplatz, moderner 360°-Fahrsimulator und unser erfahrenes Coach-Team. Qualität in der Fahrausbildung.",
+};
+
 const getCoachesData = async () => {
   var url = new URL(`https://api.drivem1.de/website/employees/`);
 

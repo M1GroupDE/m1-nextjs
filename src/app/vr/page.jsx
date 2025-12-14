@@ -4,6 +4,12 @@ import InfoCard from "@/components/InfoCard";
 import PageIntro from "@/components/PageIntro";
 import { CalendarLinear } from "solar-icon-set";
 
+export const metadata = {
+  title: "360° Fahrsimulator - Realistisches Fahren trainieren",
+  description:
+    "Unser 360°-Fahrsimulator bietet echtes Fahrgefühl mit realistischer Fahrphysik und Force-Feedback. Perfekt zum sicheren Trainieren für Führerscheinprüfung.",
+};
+
 const iconCardData = [
   {
     icon: "/img/360.png",

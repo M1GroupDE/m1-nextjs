@@ -4,6 +4,12 @@ import InfoCard from "@/components/InfoCard";
 import PageIntro from "@/components/PageIntro";
 import Steps from "@/components/Steps";
 
+export const metadata = {
+  title: "Digitale Fahrstunden & Online-Unterricht - Flexible Fahrschule",
+  description:
+    "M1 Academy bietet digitale Fahrstunden mit Online-Theorieunterricht, 360°-Fahrsimulator und vollständige Online-Verwaltung für deine Fahrausbildung.",
+};
+
 const iconCardData = [
   { icon: "/img/Vorteile.png", title: "Vorteile" },
   {

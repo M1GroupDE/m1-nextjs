@@ -3,6 +3,12 @@ import Hero from "@/components/Hero";
 import Link from "next/link";
 import Form from "./Form";
 
+export const metadata = {
+  title: "Kontakt M1 Academy - Wir freuen uns auf dich",
+  description:
+    "Kontaktiere M1 Academy für Fragen zu Fahrstunden, Preisen und Anmeldung. Finde deine nächste Filiale und nimm heute noch Kontakt auf.",
+};
+
 const getBranchesData = async () => {
   var url = new URL(`https://api.drivem1.de/website/branches/`);
 

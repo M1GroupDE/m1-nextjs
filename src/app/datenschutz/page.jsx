@@ -1,5 +1,11 @@
 import Hero from "@/components/Hero";
 
+export const metadata = {
+  title: "Datenschutzerklärung - M1 Academy",
+  description:
+    "Datenschutzerklärung von M1 Academy. Informationen zum Schutz deiner personenbezogenen Daten gemäß DSGVO.",
+};
+
 const page = () => {
   return (
     <main id="policy">

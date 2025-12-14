@@ -2,6 +2,12 @@ import Hero from "@/components/Hero";
 import IconCard from "@/components/IconCard";
 import PageIntro from "@/components/PageIntro";
 
+export const metadata = {
+  title: "Online Theorieprüfung - Mit M1 Academy vorbereitet sein",
+  description:
+    "Bereite dich mit M1 Academy auf die Theorieprüfung vor. Offizielle Prüfungsfragen, automatische Wiederholungen und Prüfungsmodus für optimale Vorbereitung.",
+};
+
 const iconCardData = [
   {
     icon: "/img/Offizielle Prüfungsfragen.png",

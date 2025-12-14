@@ -5,6 +5,12 @@ import PageIntro from "@/components/PageIntro";
 import QA from "@/components/QA";
 import Steps from "@/components/Steps";
 
+export const metadata = {
+  title: "Finanzierung deiner Fahrschule - Flexible Zahlungspläne",
+  description:
+    "Fahrschule finanzieren bei M1 Academy: Flexible Laufzeiten (3, 6, 12 Monate), keine versteckten Kosten, transparente Preise und einfacher Online-Antrag.",
+};
+
 const iconCardData = [
   {
     icon: "/img/Flexible Laufzeiten.png",

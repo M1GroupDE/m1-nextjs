@@ -5,6 +5,12 @@ import IconCard from "@/components/IconCard";
 import PageIntro from "@/components/PageIntro";
 import Steps from "@/components/Steps";
 
+export const metadata = {
+  title: "Führerschein in 7-14 Tagen - Intensivkurs bei M1",
+  description:
+    "Mache deinen Führerschein in nur 7-14 Tagen mit unserem Intensivkurs. Flexible Zeiten, persönliches Coaching und komplette Unterstützung bei M1 Academy.",
+};
+
 const iconCardData = [
   {
     icon: "/img/Schnell & effizient.png",

@@ -20,6 +20,29 @@ const getPost = async (slug) => {
   return notFound();
 };
 
+export const generateMetadata = async ({ params }) => {
+  const slug = (await params).slug;
+  const data = await getPost(slug);
+
+  return {
+    title: data.title,
+    description:
+      data.short_desc || "Lese diesen interessanten Artikel auf dem M1 Academy Blog.",
+    openGraph: {
+      title: data.title,
+      description: data.short_desc,
+      images: [
+        {
+          url: data.photo,
+          width: 1200,
+          height: 630,
+          alt: data.title,
+        },
+      ],
+    },
+  };
+};
+
 const formatDateGerman = (dateString) => {
   if (!dateString) return "";
   const date = new Date(dateString);
