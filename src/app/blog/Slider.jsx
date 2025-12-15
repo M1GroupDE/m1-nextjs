@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Autoplay, Navigation } from "swiper/modules";
@@ -17,7 +18,7 @@ const Slider = ({ data }) => {
       >
         {data.map((item) => (
           <SwiperSlide key={item.title}>
-            <div className="slide">
+            <Link href={`/blog/${item.slug}`} className="slide">
               <div className="image-wrapper">
                 <img src={item.photo} alt={item.title} />
               </div>
@@ -25,7 +26,7 @@ const Slider = ({ data }) => {
                 <h2>{item.title}</h2>
                 <p>{item.short_desc}</p>
               </div>
-            </div>
+            </Link>
           </SwiperSlide>
         ))}
       </Swiper>
