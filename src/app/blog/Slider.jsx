@@ -21,7 +21,7 @@ const Slider = ({ data }) => {
               <div className="image-wrapper">
                 <img src={item.photo} alt={item.title} />
               </div>
-              <div className="content">
+              <div className="content flex-col">
                 <h2>{item.title}</h2>
                 <p>{item.short_desc}</p>
               </div>

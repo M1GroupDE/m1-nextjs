@@ -63,9 +63,9 @@ const page = async ({ params }) => {
     <main id="blog-detail-page" className="wrapper">
       <div className="head flex-col">
         <h1>{data.title}</h1>
+        <p>{data.short_desc}</p>
         <small>{formatDateGerman(data.published_at)}</small>
         <img src={data.photo} alt={data.title} />
-        <p>{data.short_desc}</p>
       </div>
 
       <div className="content">
