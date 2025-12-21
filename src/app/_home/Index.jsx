@@ -202,7 +202,7 @@ const Index = async () => {
             <p>MOTORRAD</p>
             <RoundArrowLeftUpBold color="white" className="cta-icon" size={34} />
           </Link>
-          <Link href={"/class-c"} className="card flex-col">
+          <Link href={"/class-d"} className="card flex-col">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="80"
@@ -223,7 +223,7 @@ const Index = async () => {
             <p>AUTO-ANHÄNGER</p>
             <RoundArrowLeftUpBold color="white" className="cta-icon" size={34} />
           </Link>
-          <Link href={"/class-d"} className="card flex-col">
+          <Link href={"/class-c"} className="card flex-col">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="80"
