@@ -5,7 +5,15 @@ const Hero = ({ img, title, subtitle, ctaTitle, ctaLink, video }) => {
     <section className="hero wrapper">
       {video ? (
         <div className="hero-image">
-          <video src={video} autoPlay loop muted poster={img}></video>
+          <video
+            src={video}
+            autoPlay
+            loop
+            muted
+            playsInline
+            preload="auto"
+            poster={img}
+          ></video>
           <div className="content flex-col">
             <h1>{title}</h1>
             <p>{subtitle}</p>
