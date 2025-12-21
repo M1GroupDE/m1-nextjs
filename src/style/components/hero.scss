@@ -9,6 +9,17 @@
 
       @include lg {
         height: 400px;
+        filter: brightness(0.8);
+      }
+    }
+
+    video {
+      width: 100%;
+      border-radius: 32px;
+      filter: brightness(0.8);
+      @include lg {
+        height: 400px;
+        filter: brightness(0.8);
       }
     }
     .content {

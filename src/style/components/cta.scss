@@ -1,7 +1,9 @@
 @use "@/style/library/breakpoint" as *;
 
 .cta-box {
+  background-blend-mode: darken;
   .content {
+    position: relative;
     min-height: 190px;
     color: white;
     border-radius: 24px;
@@ -12,8 +14,22 @@
     background-position: center center;
     background-size: cover;
 
+    & > * {
+      position: relative;
+      z-index: 2;
+    }
+
     h2 {
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    &::before {
+      content: "";
+      border-radius: 25px;
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.2);
+      z-index: 1;
     }
 
     @include lg {

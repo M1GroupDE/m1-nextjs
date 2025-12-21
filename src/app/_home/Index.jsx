@@ -4,7 +4,6 @@ import CtaBox from "@/components/CtaBox";
 import Hero from "@/components/Hero";
 import IconCard from "@/components/IconCard";
 import QA from "@/components/QA";
-import TopJob from "@/components/TopJob";
 import Vehicles from "@/components/Vehicles";
 import Link from "next/link";
 import { RoundArrowLeftUpBold } from "solar-icon-set";
@@ -135,6 +134,7 @@ const Index = async () => {
     <main id="home-page">
       <Hero
         img={"/img/home-hero.jpg"}
+        video={"/vid.mp4"}
         title={"Modern, familiär, digital"}
         subtitle={"Deine Wahl, deine Schule – Egal, Auto, Motorrad"}
         ctaTitle={"JETZT ANMELDEN"}
@@ -202,7 +202,7 @@ const Index = async () => {
             <p>MOTORRAD</p>
             <RoundArrowLeftUpBold color="white" className="cta-icon" size={34} />
           </Link>
-          <div className="card flex-col">
+          <Link href={"/class-c"} className="card flex-col">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="80"
@@ -222,8 +222,8 @@ const Index = async () => {
             </svg>
             <p>AUTO-ANHÄNGER</p>
             <RoundArrowLeftUpBold color="white" className="cta-icon" size={34} />
-          </div>
-          <div className="card flex-col">
+          </Link>
+          <Link href={"/class-d"} className="card flex-col">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="80"
@@ -246,7 +246,7 @@ const Index = async () => {
             </svg>
             <p>TRAKTOR</p>
             <RoundArrowLeftUpBold color="white" className="cta-icon" size={34} />
-          </div>
+          </Link>
         </div>
       </div>
 
@@ -275,8 +275,6 @@ const Index = async () => {
       <Coaches data={coachesData} />
 
       <Schritte />
-
-      <TopJob />
 
       <IconCard data={iconCarddata} title={"Schritte zum Erhalt des Zertifikats"} />
 

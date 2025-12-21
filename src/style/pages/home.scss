@@ -22,6 +22,17 @@
         clip-path: none;
       }
     }
+
+    video {
+      clip-path: url(#roundedShape);
+      height: 600px;
+      object-fit: cover;
+      object-position: center;
+
+      @include lg {
+        clip-path: none;
+      }
+    }
   }
   .sub-hero {
     margin-top: -200px;

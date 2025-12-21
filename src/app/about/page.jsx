@@ -1,7 +1,6 @@
 import Coaches from "@/components/Coaches";
 import Hero from "@/components/Hero";
 import PageIntro from "@/components/PageIntro";
-import TopJob from "@/components/TopJob";
 import Vehicles from "@/components/Vehicles";
 
 export const metadata = {
@@ -50,8 +49,6 @@ const page = async () => {
         cta={"JETZT ANMELDEN"}
         link={"/contact"}
       />
-
-      <TopJob />
 
       <Coaches data={coachesData} />
 

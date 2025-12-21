@@ -30,8 +30,8 @@ const Header = () => {
   const driveMenu = [
     { href: "/class-b", label: "Auto" },
     { href: "/class-a", label: "MOTORRAD" },
-    { href: "#", label: "AUTO-ANHÄNGER" },
-    { href: "#", label: "TRAKTOR" },
+    { href: "/class-d", label: "TRAKTOR" },
+    { href: "/class-c", label: "AUTO-ANHÄNGER" },
   ];
 
   const servicesMenu = [
