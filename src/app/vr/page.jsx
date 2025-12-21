@@ -2,7 +2,6 @@ import Hero from "@/components/Hero";
 import IconCard from "@/components/IconCard";
 import InfoCard from "@/components/InfoCard";
 import PageIntro from "@/components/PageIntro";
-import { CalendarLinear } from "solar-icon-set";
 
 export const metadata = {
   title: "360° Fahrsimulator - Realistisches Fahren trainieren",
@@ -63,38 +62,39 @@ const page = () => {
 
         <div className="list">
           <div className="box flex-row">
-            <CalendarLinear size={32} />
+            <img src="/img/ivr-1.png" alt="" width={45} height={45} />
             <p>
               <strong>Grundlagen: Anfahren, Schalten, Anhalten</strong>
             </p>
           </div>
           <div className="box flex-row">
-            <CalendarLinear size={32} />
+            <img src="/img/ivr-2.png" alt="" width={45} height={45} />
             <p>
               <strong>Parken & Rangieren</strong>
             </p>
           </div>
 
           <div className="box flex-row">
-            <CalendarLinear size={32} />
+            <img src="/img/ivr-3.png" alt="" width={45} height={45} />
+
             <p>
               <strong>Verkehrsbeobachtung & Spiegelarbeit</strong>
             </p>
           </div>
           <div className="box flex-row">
-            <CalendarLinear size={32} />
+            <img src="/img/ivr-4.png" alt="" width={45} height={45} />
             <p>
               <strong>Nacht- und Schlechtwetterfahrten</strong>
             </p>
           </div>
           <div className="box flex-row">
-            <CalendarLinear size={32} />
+            <img src="/img/ivr-5.png" alt="" width={45} height={45} />
             <p>
               <strong>Stadt-, Land- und Autobahntraining</strong>
             </p>
           </div>
           <div className="box flex-row">
-            <CalendarLinear size={32} />
+            <img src="/img/ivr-6.png" alt="" width={45} height={45} />
             <p>
               <strong>Gefahrbremsung & Ausweichmanöver</strong>
             </p>
