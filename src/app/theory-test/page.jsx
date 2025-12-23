@@ -17,7 +17,8 @@ const iconCardData = [
   {
     icon: "/img/Automatische Wiederholung.png",
     title: "Automatische Wiederholung",
-    description: "Fragen, die du falsch beantwortest, automatisch erneut im Training.",
+    description:
+      "Fragen, die du falsch beantwortest, werden automatisch erneut ins Training aufgenommen.",
   },
   {
     icon: "/img/Lernhilfen & Erklärvideos.png",
@@ -37,7 +38,7 @@ const page = () => {
       <Hero img={"/img/theory-test-hero.jpg"} />
 
       <PageIntro
-        title={"Alle Fragen für die Theorieprüfung – schnell, aktuell und prüfungsnah."}
+        title={"Alle Fragen für die Theorieprüfung - schnell, aktuell und prüfungsnah."}
         description={
           "Übe mit offiziellen Prüfungsfragen, interaktiven Tests und sofortigem Feedback. Perfekt zur Vorbereitung auf deine Theorieprüfung."
         }

@@ -13,7 +13,10 @@ export const metadata = {
 };
 
 const iconCardData = [
-  { icon: "/img/ALTERSKLASSE.png", title: "ALTERSKLASSE: 17 JAHRE+" },
+  {
+    icon: "/img/ALTERSKLASSE.png",
+    title: "ALTERSKLASSE: 24 JAHRE+ (oder ab 20 mit Vorbesitz A2 seit 2 Jahren)",
+  },
   {
     icon: "/img/GETRIEBE.png",
     title: "GETRIEBE: MANUELL / AUTOMATIK",
@@ -27,20 +30,20 @@ const iconCardData = [
 const checkListData = [
   { title: "Biometrisches Passfoto" },
   { title: "Ggf. deinen aktuellen Führerschein" },
-  { title: "Nachweis für Erste-Hilfe-Kurs" },
-  { title: "Sehtest-Bescheinigung (nicht älter als zwei Jahre)" },
+  { title: "Nachweis über den Erste-Hilfe-Kurs" },
+  { title: "Sehtestbescheinigung (nicht älter als zwei Jahre)" },
   { title: "Schutzbekleidung für deine Fahrstunden" },
-  { title: "anerkannter, amtlicher Ausweis (z.B. Personalausweis, Reisepass)" },
+  { title: "Anerkannter, amtlicher Ausweis (z.B. Personalausweis, Reisepass)" },
 ];
 
 const expandableInfoCardData = [
   {
     title: "Großer Motorradführerschein — Klasse A",
     description:
-      "Der Motorradführerschein A erlaubt das Fahren aller Krafträder ohne Leistungsbegrenzung – für echte Motorradliebhaber:innen, die maximale Freiheit genießen wollen.",
+      "Der Führerschein Klasse A erlaubt das Fahren aller Krafträder ohne Leistungsbegrenzung – für echte Motorradliebhaber:innen, die maximale Freiheit genießen wollen.",
     requirements: [
       "In der Regel Klasse A2, aber je nach Alter ist auch ein Direkteinstieg möglich",
-      "Mindestalter: 24 Jahre (Direkteinstieg) oder 20 Jahre (Aufstieg von A2)",
+      "Mindestalter: 24 Jahre (direkt) oder 20 Jahre mit 2 Jahren A2-Erfahrung",
     ],
     training: [
       "Theorie: 12 Doppelstunden Grundstoff + 4 Doppelstunden Zusatzstoff",
@@ -54,10 +57,8 @@ const expandableInfoCardData = [
   {
     title: "Dein erstes Motorrad — Klasse A1",
     description:
-      "Mit dem A2-Führerschein kannst du ab 18 Jahren leistungsstarke Motorräder bis 35 kW fahren und noch mehr Freiheit genießen. Besitzt du bereits den A1-Führerschein, reicht eine praktische Prüfung, um aufzusteigen.",
-    requirements: [
-      "Mindestalter: 24 Jahre (Direkteinstieg) oder 20 Jahre (Aufstieg von A2)",
-    ],
+      "Mit dem Führerschein Klasse A1 darfst du Leichtkrafträder bis 125 cm³ und max. 11 kW fahren – ideal für den Einstieg ins Motorradfahren.",
+    requirements: ["Mindestalter: 16 Jahre"],
     training: [
       "Theorie: 12 Doppelstunden Grundstoff + 4 Doppelstunden Zusatzstoff",
       "Sonderfahrten: 5 Überland, 4 Autobahn, 3 Nachtfahrten",
@@ -68,12 +69,12 @@ const expandableInfoCardData = [
     ],
   },
   {
-    title: "Mittlerer Motorrad-Führerschein — Klasse A2",
+    title: "Mittlerer Motorradführerschein — Klasse A2",
     description:
-      "Mit A2 darfst du Motorräder bis 35 kW und einem max. Leistungsgewicht von 0,2 kW/kg fahren - der perfekte Kompromiss zwischen Leistung und Kontrolle.",
+      "Mit Klasse A2 darfst du Motorräder bis 35 kW und einem max. Leistungsgewicht von 0,2 kW/kg fahren – der perfekte Kompromiss zwischen Leistung und Kontrolle.",
     requirements: [
-      "Keine – diese Klasse kann direkt erworben werden",
-      "Mindestalter: 24 Jahre (Direkteinstieg) oder 20 Jahre (Aufstieg von A2)",
+      "Keine - diese Klasse kann direkt erworben werden",
+      "Mindestalter: 18 Jahre",
     ],
     training: [
       "Theorie: 12 Doppelstunden Grundstoff + 4 Doppelstunden Zusatzstoff",
@@ -84,9 +85,9 @@ const expandableInfoCardData = [
   {
     title: "Roller-Führerschein — Klasse AM",
     description:
-      "Mit dem Führerschein der Klasse AM bist du mobil auf zwei Rädern. Du darfst Kleinkrafträder bis 50 cm³ und mit einer Höchstgeschwindigkeit von 45 km/h fahren – perfekt für den Einstieg in die motorisierte Mobilität.",
+      "Mit dem Führerschein Klasse AM bist du mobil auf zwei Rädern. Du darfst Kleinkrafträder bis 50 cm³ und max. 45 km/h fahren – perfekt für den Einstieg in die motorisierte Mobilität.",
     requirements: [
-      "Mindestalter: 15 Jahre (je nach Bundesland)",
+      "Mindestalter: 15 Jahre",
       "Sicherer Umgang mit Zweirädern",
       "Einverständnis der Erziehungsberechtigten (bei Minderjährigen)",
     ],
@@ -154,15 +155,15 @@ const page = async () => {
       />
 
       <PageIntro
-        title={"Unabhängigkeit kann Abhängig machen."}
+        title={"Unabhängigkeit kann süchtig machen:"}
         description={
-          "Hast du dich schon einmal gefragt, warum jedes Jahr im Frühling unzählige Menschen mit fettem Grinsen ihren Helm aus dem Keller holen? Die Antwort liegt auf der Straße – oder besser gesagt in der Kurve: Fahrtwind spüren, für einen Moment eins mit der Straße werden, die Strecke mit dem ganzen Körper wahrnehmen und obendrauf in jedem Tunnel der fette Sound deiner Maschine – so hast du Freiheit noch nie erlebt, versprochen. Und damit das auch schon vor deiner ersten Fahrstunde gilt, kümmern wir uns bei ACADEMY ums organisatorische Drumherum. Also los, such dir eine Klasse aus - und wir starten gemeinsam ins Abenteuer."
+          "Hast du dich schon mal gefragt, warum jedes Frühjahr unzählige Menschen mit breitem Grinsen ihren Helm aus dem Keller holen? Die Antwort liegt auf der Straße – oder besser gesagt in der Kurve: Fahrtwind spüren, eins mit der Maschine werden, jede Strecke mit dem ganzen Körper erleben und in jedem Tunnel der satte Sound deiner Maschine. So fühlt sich Freiheit an – versprochen. Und damit du das schon vor deiner ersten Fahrstunde erleben kannst, übernehmen wir bei ACADEMY das organisatorische Drumherum. Also los – such dir deine Klasse aus, und wir starten gemeinsam ins Abenteuer."
         }
         cta={"JETZT ANMELDEN"}
         link={"/contact"}
       />
 
-      <IconCard title={"Schnelle Fakten zur Klasse B"} data={iconCardData} />
+      <IconCard title={"Schnelle Fakten zur Klasse A"} data={iconCardData} />
 
       <ExpandableInfoCard data={expandableInfoCardData} />
 

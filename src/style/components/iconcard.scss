@@ -5,15 +5,19 @@
 
   .list {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     gap: 30px;
     width: 100%;
     padding: 0 100px;
 
+    &:has(> :nth-last-child(2):nth-child(3n + 1)) > :nth-last-child(-n + 2) {
+      grid-column: span 3;
+    }
+
     @include lg {
       grid-template-columns: repeat(2, 1fr);
       padding: 0 0px;
-      gap: 10px;
+      gap: 10px 0;
       &:has(:nth-last-child(1):nth-child(odd)) {
         > :last-child {
           grid-column: 1 / -1;
@@ -22,6 +26,7 @@
     }
 
     .box {
+      grid-column: span 2;
       background-color: white;
       border-radius: 24px;
       box-shadow: 0 0 4px rgba($color: #000000, $alpha: 0.14);

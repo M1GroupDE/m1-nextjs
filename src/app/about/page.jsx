@@ -42,9 +42,9 @@ const page = async () => {
       />
 
       <PageIntro
-        title={"Das B steht für Freiheit"}
+        title={"Bei M1 steht das B für Bewegung"}
         description={
-          "Bei M1 setzen wir auf Erfahrung, Fachkompetenz und einen eigenen Übungsplatz, um optimale Bedingungen für eine konzentrierte und stressfreie Fahrausbildung zu schaffen. Mit über 10.000 Quadratmetern Trainingsfläche ermöglichen wir praktische Übungen ohne Ablenkung durch andere Verkehrsteilnehmer – ideal für Motorrad- und Lkw-Ausbildungen sowie für den Einstieg ins Autofahren. Ergänzend dazu kommt der Einsatz eines modernen 360°-Fahrsimulators."
+          "Bei M1 setzen wir auf Erfahrung, Fachkompetenz und einen eigenen Übungsplatz, um optimale Bedingungen für eine konzentrierte und stressfreie Fahrausbildung zu schaffen. Mit über 10.000 Quadratmetern Trainingsfläche ermöglichen wir praktische Übungen ohne Ablenkung durch andere Verkehrsteilnehmer - ideal für Motorrad- und Lkw-Ausbildungen sowie für den Einstieg ins Autofahren. Ergänzend dazu kommt der Einsatz eines modernen 360°-Fahrsimulators."
         }
         cta={"JETZT ANMELDEN"}
         link={"/contact"}

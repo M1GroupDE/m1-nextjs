@@ -7,7 +7,7 @@ const data = [
     name: "Mehrsprachiger Unterricht",
   },
   {
-    name: "Über 30 Fahrlehrer:innen",
+    name: "Über 30 Fahrlehrer/-innen",
   },
   {
     name: "Strukturierter Lehrplan",

@@ -9,7 +9,7 @@ const ContactCard = () => {
         <div className="contact-details flex-col">
           <div className="header">
             <p>
-              <strong>Sitki Dener - Leitung Intensivausbildung</strong>
+              <strong>Sitki Dener - Leiter der Intensivausbildung</strong>
             </p>
             <small>
               Er kennt das System, versteht deine Situation und begleitet dich sicher zum

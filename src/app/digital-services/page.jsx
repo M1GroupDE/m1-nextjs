@@ -11,7 +11,7 @@ export const metadata = {
 };
 
 const iconCardData = [
-  { icon: "/img/Vorteile.png", title: "Vorteile" },
+  { icon: "/img/Vorteile.png", title: "Wissen mit Mehrwert" },
   {
     icon: "/img/Lernen überall & jederzeit.png",
     title: "Lernen überall & jederzeit",
@@ -29,15 +29,15 @@ const iconCardData = [
 const infoCardData = [
   {
     title: "Online-Theorieunterricht",
-    description: "Theorie bequem von zu Hause – live oder als Aufzeichnung.",
+    description: "Theorie bequem von zu Hause - live oder als Aufzeichnung.",
   },
   {
     title: "360° Fahrsimulator",
-    description: "Realistisches Fahrgefühl ohne Risiko – perfekt zum Einstieg.",
+    description: "Realistisches Fahrgefühl ohne Risiko - perfekt zum Einstieg.",
   },
   {
     title: "M1Plus App",
-    description: "Lernfortschritt, Termine & Rechnungen – alles in einer App.",
+    description: "Lernfortschritt, Termine & Rechnungen - alles in einer App.",
   },
   {
     title: "Digitale Lernplattform",
@@ -53,7 +53,7 @@ const page = () => {
       <PageIntro
         title={"Digitale Dienste für deine Führerscheinausbildung"}
         description={
-          "Lerne flexibel, modern und effizient – mit unseren digitalen Tools, Online-Unterricht und 360°-Simulator."
+          "Lerne flexibel, modern und effizient - mit unseren digitalen Tools, Online-Unterricht und 360°-Simulator."
         }
         cta={"JETZT ANMELDEN"}
         link={"/contact"}

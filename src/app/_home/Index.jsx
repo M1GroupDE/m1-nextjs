@@ -17,23 +17,29 @@ const iconCarddata = [
   { icon: "/img/Strukturierter Lehrplan.png", title: "Strukturierter Lehrplan" },
   {
     icon: "/img/Fahrstunden auch in Englisch.png",
-    title: "Fahrstunden auch in Englisch",
+    title: "Fahrstunden auch auf Englisch",
   },
   {
-    icon: "/img/Deine Fahrstunde gehört dir allein.png",
-    title: "Deine Fahrstunde gehört dir allein",
+    icon: "/img/Ratenzahlung.png",
+    title: "Ratenzahlung ist bei Ihnen möglich.",
   },
   { icon: "/img/Wir sind jung und digital.png", title: "Wir sind jung und digital" },
   {
     icon: "/img/Deine Fahrstunde gehört dir allein.png",
     title: "Deine Fahrstunde gehört dir allein",
   },
-  { icon: "/img/Spezialist für Umschreiber.png", title: "Spezialist für Umschreiber" },
-  { icon: "/img/Strukturierter Lehrplan2.png", title: "Strukturierter Lehrplan" },
+  {
+    icon: "/img/Spezialist für Umschreiber.png",
+    title: "Spezialist für Führerscheinumschreibung",
+  },
+  {
+    icon: "/img/Strukturierter Lehrplan2.png",
+    title: "Der Transport des Fahrschülers erfolgt von der Haustür.",
+  },
   { icon: "/img/Du stehst im Mittelpunkt.png", title: "Du stehst im Mittelpunkt" },
   {
     icon: "/img/Was zählt, ist deine Selbsteinschätzung.png",
-    title: "Was zählt, ist deine Selbsteinschätzung",
+    title: "Deine Selbsteinschätzung zählt",
   },
 ];
 
@@ -136,7 +142,7 @@ const Index = async () => {
         img={"/img/home-hero.jpg"}
         video={"/vid.mp4"}
         title={"Modern, familiär, digital"}
-        subtitle={"Deine Wahl, deine Schule – Egal, Auto, Motorrad"}
+        subtitle={"Deine Wahl, deine Schule - Egal, Auto, Motorrad"}
         ctaTitle={"JETZT ANMELDEN"}
         ctaLink={"/contact"}
       />
@@ -202,7 +208,7 @@ const Index = async () => {
             <p>MOTORRAD</p>
             <RoundArrowLeftUpBold color="white" className="cta-icon" size={34} />
           </Link>
-          <Link href={"/class-d"} className="card flex-col">
+          <Link href={"/class-c"} className="card flex-col">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="80"
@@ -220,10 +226,10 @@ const Index = async () => {
               <path d="M17 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
               <path d="M5 17h-2v-11a1 1 0 0 1 1 -1h9v12m-4 0h6m4 0h2v-6h-8m0 -5h5l3 5" />
             </svg>
-            <p>AUTO-ANHÄNGER</p>
+            <p>Lkw</p>
             <RoundArrowLeftUpBold color="white" className="cta-icon" size={34} />
           </Link>
-          <Link href={"/class-c"} className="card flex-col">
+          <Link href={"/class-l"} className="card flex-col">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="80"
@@ -245,6 +251,31 @@ const Index = async () => {
               <path d="M18 5h-1a1 1 0 0 0 -1 1v4" />
             </svg>
             <p>TRAKTOR</p>
+            <RoundArrowLeftUpBold color="white" className="cta-icon" size={34} />
+          </Link>
+          <Link href={"/#"} className="card flex-col">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="80"
+              height="80"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="icon icon-tabler icons-tabler-outline icon-tabler-bus"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M6 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+              <path d="M18 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+              <path d="M4 17h-2v-11a1 1 0 0 1 1 -1h14a5 7 0 0 1 5 7v5h-2m-4 0h-8" />
+              <path d="M16 5l1.5 7l4.5 0" />
+              <path d="M2 10l15 0" />
+              <path d="M7 5l0 5" />
+              <path d="M12 5l0 5" />
+            </svg>
+            <p>BUS</p>
             <RoundArrowLeftUpBold color="white" className="cta-icon" size={34} />
           </Link>
         </div>
@@ -276,7 +307,7 @@ const Index = async () => {
 
       <Schritte />
 
-      <IconCard data={iconCarddata} title={"Schritte zum Erhalt des Zertifikats"} />
+      <IconCard data={iconCarddata} title={"Schritte zum Erwerb des Führerscheins"} />
 
       <CtaBox
         title={"Fragen zur Theorieprüfung"}

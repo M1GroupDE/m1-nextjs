@@ -48,8 +48,8 @@
       margin-top: -90px;
       width: 55%;
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 20px;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 10px;
 
       @include lg {
         gap: 10px;
@@ -105,6 +105,12 @@
         margin-top: 0px;
         width: 100%;
         grid-template-columns: repeat(2, 1fr);
+
+        &:has(:nth-last-child(1):nth-child(odd)) {
+          > :last-child {
+            grid-column: 1 / -1;
+          }
+        }
       }
     }
   }
@@ -180,6 +186,10 @@
 
       @include lg {
         width: 100%;
+      }
+
+      img {
+        border-radius: 25px;
       }
 
       .img-1 {
@@ -300,7 +310,8 @@
     }
 
     .swiper {
-      overflow: visible;
+      overflow-y: visible;
+      overflow-x: clip;
     }
 
     .swiper-pagination {

@@ -7,87 +7,87 @@ import PageIntro from "@/components/PageIntro";
 import QA from "@/components/QA";
 
 export const metadata = {
-  title: "Führerschein Klasse C - LKW Fahrer Ausbildung bei M1 Academy",
+  title: "Führerschein Klasse L - LKW Fahrer Ausbildung bei M1 Academy",
   description:
-    "Führerschein Klasse C bei M1 Academy: Schwere Nutzfahrzeuge, LKW-Ausbildung, Ladungssicherung und professionelle Fahrer. Deine Ausbildung mit erfahrenen Coaches und Fahrsimulator.",
+    "Führerschein Klasse L bei M1 Academy: Schwere Nutzfahrzeuge, LKW-Ausbildung, Ladungssicherung und professionelle Fahrer. Deine Ausbildung mit erfahrenen Coaches und Fahrsimulator.",
 };
 
 const iconCardData = [
   {
-    icon: "/img/Mindestalter.png",
-    title: "Mindestalter: 21 (18 für Berufskraftfahrer)",
+    icon: "/img/Mindestalter24.png",
+    title: "Mindestalter: 21 (oder 18 mit Grundqualifikation)",
   },
   {
-    icon: "/img/Getriebe2.png",
-    title: "Getriebe: Schaltung / Automatik",
+    icon: "/img/VoraussetzungD.png",
+    title: "Voraussetzung: Führerschein Klasse B",
   },
   {
-    icon: "/img/Fahrstil2.png",
-    title: "Fahrstil/Coach: Individuell & beruflich orientiert",
+    icon: "/img/Getriebe3.png",
+    title: "Manuell oder Automatik",
   },
   {
-    icon: "/img/Fahrzeugauswahl.png",
-    title: "Fahrzeugauswahl: LKW + Anhänger ≤750 kg",
+    icon: "/img/Fahrzeugtyp.png",
+    title: "Fahrzeugtyp: Lastkraftwagen über 3.500 kg",
   },
   {
-    icon: "/img/360°-Trainingssimulator für Gefahrensituationen.png",
-    title: "360°-Trainingssimulator für Gefahrensituationen",
+    icon: "/img/Einsatzbereich.png",
+    title: "Einsatzbereich: Güterverkehr, Logistik, Spedition",
   },
   {
     icon: "/img/Prüfungstypen2.png",
-    title: "Prüfungstypen: Theorie & Praxis",
+    title: "Prüfung: Theorie und Praxis",
   },
 ];
 
 const expandableInfoCardData = [
   {
-    title: "Wie Klasse C Besonderheiten",
+    title: "Klasse C – Lkw-Führerschein",
     description:
-      "Praxisnahe Ausbildung für schwere Nutzfahrzeuge mit Fokus auf Sicherheit und effizientes Fahren.",
+      "Die Klasse C erlaubt das Führen von Kraftfahrzeugen über 3.500 kg zulässigem Gesamtgewicht – ideal für alle, die beruflich im Güterverkehr tätig sind und Verantwortung auf der Straße übernehmen.",
     requirements: [
-      "Mindestalter: 21 Jahre (18 Jahre mit Berufsausbildung)",
-      "Besonderheiten: Fokus auf Ladungssicherung, Fahrphysik, Lenkzeiten",
+      "Mindestalter: 24 Jahre",
+      "Gültiger Führerschein Klasse B",
+      "Körperliche und geistige Eignung",
+      "Keine schwerwiegenden Verkehrsverstöße",
     ],
     training: [
-      "Theorie: 6 Doppelstunden Grundstoff + 10 Doppelstunden Zusatzstoff",
-      "Sonderfahrten: 5 Überland, 2 Autobahn, 3 Nachtfahrten",
-      "Praxis: Übungsstunden je nach Lernfortschritt",
+      "Theorie: Verkehrsregeln, Fahrerpflichten und Notfallsicherheit im Personenverkehr",
+      "Praxis: Fahrbetrieb, Rangieren und Fahrgastmanagement",
+      "Übungsstunden: Je nach Lernfortschritt",
     ],
     highlights: [],
   },
   {
-    title: "C1 - Leichte LKW",
+    title: "Klasse C mit Schlüsselzahl 95 (Berufskraftfahrer)",
     description:
-      "C1 erlaubt das Fahren von leichten LKW zwischen 3,5 und 7,5 Tonnen, meist für städtische Transporte und kleinere Lieferdienste.",
+      "Erforderlich für alle Personen, die eine gewerbliche Tätigkeit im Gütertransport aufnehmen oder ausüben möchten.",
     requirements: [
-      "Mindestalter: 18 Jahre",
-      "Fahrzeuge: 3.5 bis 7.5 Tonnen",
-      "Automatischer Übergang in Klasse C",
+      "Mindestalter: 24 Jahre (21 Jahre bei beschleunigter Grundqualifikation)",
+      "Führerschein: Gültiger Führerschein der Klasse D",
+      "Zuverlässigkeit: Keine schwerwiegenden Verkehrs- oder Straftaten",
+      "Sprachkenntnisse: Ausreichende Deutschkenntnisse für Theorie, Prüfung und Berufsalltag",
+      "Gesundheitliche Eignung: Ärztliches und augenärztliches Gutachten",
+      "Grundqualifikation / Weiterbildung nach BKrFQG",
     ],
-    training: [],
-    highlights: [],
-  },
-  {
-    title: "CE - LKW mit großem Anhänger",
-    description:
-      "CE berechtigt zum Fahren schwerer LKW mit großen Anhängern über 750 kg, vor allem im Fernverkehr und in der professionellen Logistik.",
-    requirements: [
-      "Mindestalter: 21 Jahre",
-      "Fahrzeuge: LKW + Anhänger über 750 kg",
-      "Besonderheiten: Ausbildung im Rangieren mit Anhänger, Druckluftbremsen und schwierigen Kurven",
+    training: [
+      "Erweiterte theoretische Schulung",
+      "Pflicht für den gewerblichen Einsatz",
+      "EU-weit anerkannt",
     ],
-    training: [],
     highlights: [],
   },
 ];
 
 const checkListData = [
-  { title: "Anerkannter Ausweis (Personalausweis oder Reisepass)" },
+  { title: "Anerkannter amtlicher Ausweis (Personalausweis oder Reisepass)" },
+  { title: "Nachweis über den Erste-Hilfe-Kurs" },
   { title: "Biometrisches Passfoto" },
-  { title: "Sehtest-Bescheinigung" },
-  { title: "Erste-Hilfe-Kurs Nachweis" },
-  { title: "Führungszeugnis (polizeiliches)" },
-  { title: "Gültiger Führerschein Klasse B" },
+  { title: "Führerschein Klasse B" },
+  { title: "Sehtestbescheinigung" },
+  {
+    title:
+      "Mindestalter bei Anmeldung erreicht (mind. 21 Jahre oder 18 mit Berufsausbildung)",
+  },
 ];
 
 const getQAData = async () => {
@@ -145,9 +145,9 @@ const page = async () => {
       />
 
       <PageIntro
-        title={"Das C steht für Verantwortung."}
+        title={"Das C steht für Kontrolle."}
         description={
-          "Der Führerschein der Klasse C bedeutet den Einstieg in die professionelle Welt des Fahrens mit schweren Nutzfahrzeugen. Er berechtigt zum Führen von LKWs mit einem Gewicht über 3,5 Tonnen - ideal für Transport, Logistik und industrielle Berufe."
+          "Der Führerschein der Klasse C berechtigt zum Führen von Lastkraftwagen über 3.500 kg zulässigem Gesamtgewicht – ideal für alle, die beruflich im Güterverkehr unterwegs sind und Verantwortung auf der Straße übernehmen wollen."
         }
         cta={"JETZT ANMELDEN"}
         link={"/contact"}

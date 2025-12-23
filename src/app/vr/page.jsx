@@ -30,7 +30,7 @@ const iconCardData = [
 
 const infoData = [
   {
-    title: "Echtzeit Fahrphysik",
+    title: "Echtzeit-Fahrphysik",
   },
   {
     title: "Original DEGENER-Software",
@@ -39,7 +39,7 @@ const infoData = [
     title: "Force-Feedback-Lenkrad",
   },
   {
-    title: "360° - Rundumsicht-System",
+    title: "360°-Rundumsicht-System",
   },
 ];
 
@@ -50,7 +50,7 @@ const page = () => {
 
       <PageIntro
         title="Fahrtraining mit dem DEGENER 360°-Fahrsimulator"
-        description="Realistisch, sicher und bis zu 70 % günstiger als eine normale Fahrstunde – perfekt für den Einstieg und effizientes Lernen."
+        description="Realistisch, sicher und bis zu 70 % günstiger als eine normale Fahrstunde - perfekt für den Einstieg und effizientes Lernen."
         cta="JETZT ANMELDEN"
         link="/contact"
       />
@@ -103,13 +103,13 @@ const page = () => {
       </div>
 
       <div className="Warum flex-row wrapper">
-        <img src="/img/warum.png" alt="" />
+        <img src="/img/warum.jpg" alt="" />
 
         <div className="content flex-col">
           <h2>Warum Simulator?</h2>
           <ul>
             <li>
-              Mit dem 360°-Fahrsimulator lernst du stressfrei und sicher – ganz ohne
+              Mit dem 360°-Fahrsimulator lernst du stressfrei und sicher - ganz ohne
               Straßenverkehr.
             </li>
             <li>

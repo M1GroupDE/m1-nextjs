@@ -9,23 +9,23 @@ const Vertrau = () => {
           Sie begleiten dich persönlich und kompetent vom Theorieunterricht bis zur
           praktischen Prüfung.
         </p>
-        <strong>Was dich bei uns erwartet:</strong>
+        <strong>Das erwartet dich bei uns:</strong>
         <ul className="flex-col">
           <li>
-            Bei M1 geht es nicht nur um den Führerschein – sondern um ein sicheres,
-            digitales und persönliches Fahrerlebnis. Mit erfahrenen Fahrlehrer:innen,
+            Bei M1 geht es nicht nur um den Führerschein - sondern um ein sicheres,
+            digitales und persönliches Fahrerlebnis. Mit erfahrenen Fahrlehrer/-innen,
             modernen Fahrzeugen und eigenem Übungsplatz machen wir dich fit für die
             Straße.
           </li>
           <li>
             Die M1 Fahrschulen stehen für innovative Ausbildung, persönliche Betreuung und
-            höchste Erfolgsquoten. Egal ob Auto, Motorrad oder Lkw – deine Fahrschule,
+            höchste Erfolgsquoten. Egal ob Auto, Motorrad oder Lkw - deine Fahrschule,
             deine M1!
           </li>
         </ul>
 
         <strong>
-          Vertrau auf Menschen, die ihren Job lieben – und dich wirklich weiterbringen.
+          Vertrau auf Menschen, die ihren Job lieben - und dich wirklich weiterbringen.
         </strong>
 
         <div className="cta flex-row">

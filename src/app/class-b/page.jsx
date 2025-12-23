@@ -24,7 +24,7 @@ const iconCardData = [
   },
   {
     icon: "/img/FAHRZEUGKLASSEN.png",
-    title: "FAHRZEUGKLASSEN: AM (ROLLER), L (TRAKTOR)",
+    title: "Mit Klasse B bekommst du zusätzlich AM & L automatisch dazu",
   },
   {
     icon: "/img/Einsatz.png",
@@ -40,7 +40,7 @@ const expandableInfoCardData = [
   {
     title: "Wie Klasse B Besonderheiten",
     description:
-      "Sicherer Start durch begleitetes Fahren Automatischer Übergang in Klasse B ab 18 Klasse B – Der klassische Pkw-Führerschein Mit der Klasse B darfst du Pkw bis 3,5 t und Anhänger bis 750 kg fahren – oder größere Anhänger, solange das Gesamtzuggewicht 3,5 t nicht übersteigt.",
+      "Sicherer Start ab 18 Jahren (oder ab 17 mit BF17) - Der klassische Pkw-Führerschein Mit der Klasse B darfst du Pkw bis 3,5 t und Anhänger bis 750 kg fahren - oder größere Anhänger, solange das Gesamtzuggewicht 3,5 t nicht übersteigt.",
     requirements: [
       "Mindestalter: 18 Jahre (bzw. 17 Jahre mit BF17)",
       "Sicherer Start durch begleitetes Fahren",
@@ -54,7 +54,7 @@ const expandableInfoCardData = [
     highlights: [],
   },
   {
-    title: "B78 – Automatikführerschein",
+    title: "B78 - Automatikführerschein",
     description:
       "Ausbildung und Prüfung ausschließlich auf Automatikfahrzeugen. Fahren nur mit Automatik erlaubt. Ideal für Personen, die stressfrei lernen oder später Elektroautos fahren möchten.",
     requirements: [
@@ -70,9 +70,9 @@ const expandableInfoCardData = [
     highlights: [],
   },
   {
-    title: "Klasse BF17 – Begleitetes Fahren ab 17",
+    title: "Klasse BF17 - Begleitetes Fahren ab 17",
     description:
-      "Freiheit früh erleben – aber sicher! Mit BF17 kannst du schon ab 17 Jahren Auto fahren – in Begleitung einer erfahrenen Person.",
+      "Freiheit früh erleben - aber sicher! Mit BF17 kannst du schon ab 17 Jahren Auto fahren - in Begleitung einer erfahrenen Person.",
     requirements: [
       "Mindestalter: 17 Jahre",
       "Sicherer Start durch begleitetes Fahren",
@@ -89,7 +89,7 @@ const expandableInfoCardData = [
     ],
   },
   {
-    title: "B197 – Kombination Automatik & Schaltwagen",
+    title: "B197 - Kombination Automatik & Schaltwagen",
     description:
       "Die moderne Variante des Pkw-Führerscheins: Die Prüfung erfolgt auf einem Automatikfahrzeug, aber mit mindestens 10 Schaltstunden und einer 15-minütigen Testfahrt erhältst du die volle Fahrberechtigung für Schalt- und Automatikfahrzeuge.",
     requirements: [
@@ -107,12 +107,12 @@ const expandableInfoCardData = [
 ];
 
 const checkListData = [
-  { title: "anerkannter, amtlicher Ausweis (z.B. Personalausweis, Reisepass)" },
+  { title: "Anerkannter, amtlicher Ausweis (z.B. Personalausweis, Reisepass)" },
   { title: "Biometrisches Passfoto" },
-  { title: "Sehtest-Bescheinigung (nicht älter als zwei Jahre)" },
-  { title: "Nachweis für Erste-Hilfe-Kurs" },
-  { title: "Kopie des Personalausweises & Führerscheins der Begleitperson (Bei BF17)" },
-  { title: "bei Anmeldung ein Alter von mind. 16,5 Jahren" },
+  { title: "Sehtestbescheinigung (nicht älter als zwei Jahre)" },
+  { title: "Nachweis Über Erste-Hilfe-Kurs" },
+  { title: "Kopie des Personalausweises & Führerscheins der Begleitperson (bei BF17)" },
+  { title: "Mindestalter bei Anmeldung: 16,5 Jahre" },
 ];
 
 const getQAData = async () => {
@@ -166,13 +166,13 @@ const page = async () => {
       <Hero
         img={"/img/classb-hero.jpg"}
         title={"Führerschein Klasse B"}
-        subtitle={"Du fährst nicht nur Motorrad. Du lebst es"}
+        subtitle={"Du fährst nicht nur Auto. Du lebst es"}
       />
 
       <PageIntro
         title={"Das B steht für Freiheit"}
         description={
-          "Der Motorradführerschein A erlaubt das Fahren aller Krafträder ohne Leistungsbegrenzung – für echte Motorradliebhaber:innen, die maximale Freiheit genießen wollen."
+          "Der Führerschein Klasse B steht für Unabhängigkeit im Alltag - für alle, die mobil und flexibel sein wollen."
         }
         cta={"JETZT ANMELDEN"}
         link={"/contact"}

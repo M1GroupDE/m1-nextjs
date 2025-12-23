@@ -30,7 +30,7 @@ const iconCardData = [
   {
     icon: "/img/Sicher & geprüft.png",
     title: "Sicher & geprüft",
-    description: "Zusammenarbeit mit seriösen Partnerbanken",
+    description: "Zusammenarbeit mit vertrauenswürdige Partnerbanken",
   },
 ];
 

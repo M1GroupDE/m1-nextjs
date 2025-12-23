@@ -51,8 +51,8 @@
     img {
       border-radius: 24px;
       width: 40%;
-      min-height: 300px;
-      object-position: 40%;
+      height: 300px;
+      object-position: top;
       @include lg {
         width: 100%;
       }
