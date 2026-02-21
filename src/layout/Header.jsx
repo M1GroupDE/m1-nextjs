@@ -32,6 +32,7 @@ const Header = () => {
     { href: "/class-a", label: "MOTORRAD" },
     { href: "/class-c", label: "Lkw" },
     { href: "/class-l", label: "TRAKTOR" },
+    { href: "/class-d", label: "BUS" },
   ];
 
   const servicesMenu = [

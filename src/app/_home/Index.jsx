@@ -253,7 +253,7 @@ const Index = async () => {
             <p>TRAKTOR</p>
             <RoundArrowLeftUpBold color="white" className="cta-icon" size={34} />
           </Link>
-          <Link href={"/#"} className="card flex-col">
+          <Link href={"/class-d"} className="card flex-col">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="80"

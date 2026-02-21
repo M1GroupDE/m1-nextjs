@@ -76,7 +76,7 @@ const page = () => {
           <strong>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV:</strong>
           <p>
             Julian Bouraoui <br />
-            Kreillerstraße 103 <br />
+            Ammerlandstraße 1 <br />
             81825 München
           </p>
         </section>
